@@ -50,8 +50,8 @@ function onLeave(_) {
   if (changePanel) {
     changePanel = false;
     nextPanel();
+    panelInterval = setInterval(nextPanel, PANEL_DISPLAY_TIME);
   }
-  panelInterval = setInterval(nextPanel, PANEL_DISPLAY_TIME);
 }
 
 for (p of panels) {
