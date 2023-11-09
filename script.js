@@ -4,7 +4,7 @@ var currentSlide = 0;
 
 function slider() {
   currentSlide += 1;
-  if (currentSlice >= slides.length)
+  if (currentSlide >= slides.length)
     currentSlide = 0;
 
   img.innerHTML = "<img src=\"banners/" + slides[currentSlide] + "\" />";
