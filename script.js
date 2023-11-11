@@ -4,18 +4,37 @@ var displayTime = 0;
 var slider = document.getElementById("slider");
 var panels = document.getElementsByClassName("slider-panel");
 var progressBar = document.getElementById("slider-progress");
+var nav = document.getElementById("slider-nav");
+var navPrevArrow;
+var navNextArrow;
+var navButtons;
 var hovering = false;
 var changePanel = false;
 var currentPanel = 0;
 var panelInterval;
 
-function addActiveClass(p) {
-  p.setAttribute("class", p.getAttribute("class") + " active");
+function setupSliderNavigation() {
+  let innerHTML = '<div id="slider-prev" class="arrow"></div>';
+
+  for (let i = 0; i < panels.length; i++) {
+    innerHTML += '<div class="slider-button" data-index="' + i + '"></div>';
+  }
+
+  innerHTML += '<div id="slider-next" class="arrow"></div>';
+  nav.innerHTML = innerHTML;
 }
 
-function removeActiveClass(p) {
-  let classNames = p.getAttribute("class").split(" ").filter(n => n !== "active");
-  p.setAttribute("class", classNames.join(" "));
+function addActiveClass(index) {
+  panels[index].setAttribute("class", panels[index].getAttribute("class") + " active");
+  navButtons[index].setAttribute("class", navButtons[index].getAttribute("class") + " active");
+}
+
+function removeActiveClass(index) {
+  let classNames = panels[index].getAttribute("class").split(" ").filter(n => n !== "active");
+  panels[index].setAttribute("class", classNames.join(" "));
+
+  classNames = navButtons[index].getAttribute("class").split(" ").filter(n => n !== "active");
+  navButtons[index].setAttribute("class", classNames.join(" "));
 }
 
 function nextPanel() {
@@ -25,23 +44,23 @@ function nextPanel() {
   //   return;
   // }
 
-  removeActiveClass(panels[currentPanel]);
+  removeActiveClass(currentPanel);
   
   currentPanel += 1;
   if (currentPanel >= panels.length)
     currentPanel = 0;
 
-  addActiveClass(panels[currentPanel]);  
+  addActiveClass(currentPanel);  
 }
 
 function prevPanel() {
-  removeActiveClass(panels[currentPanel]);
+  removeActiveClass(currentPanel);
 
   currentPanel -= 1;
   if (currentPanel < 0)
     currentPanel += panels.length;
 
-  addActiveClass(panels[currentPanel]);
+  addActiveClass(currentPanel);
 }
 
 function update() {
@@ -69,11 +88,17 @@ function onLeave(_) {
   // }
 }
 
-for (p of panels) {
-  removeActiveClass(p);
+setupSliderNavigation();
+
+navPrevArrow = document.getElementById("slider-prev");
+navNextArrow = document.getElementById("slider-next");
+navButtons = document.getElementsByClassName("slider-button");
+
+for (let i = 0; i < panels.length; i++) {
+  removeActiveClass(i);
 }
 
-addActiveClass(panels[0]);
+addActiveClass(0);
 
 panelInterval = setInterval(update, INTERVAL_UPDATE_TIME);
 slider.addEventListener("mouseover", onHover);

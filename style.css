@@ -11,12 +11,31 @@ html, body, h1, h2, h3, p {
   position: relative;
 }
 
+#slider-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  z-index: 1;
+}
+
 #slider-progress {
   background-color: #0077d9;
-  height: 2px;
+  height: 6px;
   position: absolute;
   bottom: 0;
   z-index: 1;
+}
+
+#slider-prev {
+  transform: rotate(135deg);
+  margin-right: 10px;
+}
+
+#slider-next {
+  transform: rotate(-45deg);
+  margin-left: 10px;
 }
 
 .slider-panel {
@@ -41,8 +60,28 @@ html, body, h1, h2, h3, p {
   font-family: "Open Sans", sans-serif;
 }
 
+.arrow {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #0077d9;
+  border-left: 0;
+  border-top: 0;
+}
+
+.slider-button {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #0077d9;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
 .active {
   opacity: 1;
+}
+
+.active.slider-button {
+  background-color: #0077d9;
 }
 
 #slider-1 {
