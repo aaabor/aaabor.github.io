@@ -38,12 +38,6 @@ function removeActiveClass(index) {
 }
 
 function nextPanel() {
-  // if (hovering) {
-  //   changePanel = true;
-  //   clearInterval(panelInterval);
-  //   return;
-  // }
-
   removeActiveClass(currentPanel);
   
   currentPanel += 1;
@@ -51,6 +45,8 @@ function nextPanel() {
     currentPanel = 0;
 
   addActiveClass(currentPanel);  
+  displayTime = 0;
+  updateProgressBar();
 }
 
 function prevPanel() {
@@ -61,6 +57,8 @@ function prevPanel() {
     currentPanel += panels.length;
 
   addActiveClass(currentPanel);
+  displayTime = 0;
+  updateProgressBar();
 }
 
 function update() {
@@ -68,11 +66,14 @@ function update() {
     displayTime += INTERVAL_UPDATE_TIME;
     if (displayTime >= PANEL_DISPLAY_TIME) {
       nextPanel();
-      displayTime = 0;
     }
-    newWidth = 'width: ' + ((displayTime / PANEL_DISPLAY_TIME) * 100) + '%';
-    progressBar.setAttribute("style", newWidth);
+    updateProgressBar();
   }
+}
+
+function updateProgressBar() {
+  newWidth = 'width: ' + ((displayTime / PANEL_DISPLAY_TIME) * 100) + '%';
+  progressBar.setAttribute("style", newWidth);
 }
 
 function onHover(_) {
@@ -81,11 +82,18 @@ function onHover(_) {
 
 function onLeave(_) {
   hovering = false;
-  // if (changePanel) {
-  //   changePanel = false;
-  //   nextPanel();
-  //   panelInterval = setInterval(nextPanel, PANEL_DISPLAY_TIME);
-  // }
+}
+
+function onClick(e) {
+  let index = parseInt(e.target.getAttribute("data-index"));
+  if (index !== currentPanel) {
+    removeActiveClass(currentPanel);
+    currentPanel = index;
+    addActiveClass(currentPanel);
+  }
+  
+  displayTime = 0;
+  updateProgressBar();
 }
 
 setupSliderNavigation();
@@ -103,3 +111,8 @@ addActiveClass(0);
 panelInterval = setInterval(update, INTERVAL_UPDATE_TIME);
 slider.addEventListener("mouseover", onHover);
 slider.addEventListener("mouseout", onLeave);
+navPrevArrow.addEventListener("click", prevPanel);
+navNextArrow.addEventListener("click", nextPanel);
+for (let i = 0; i < navButtons.length; i++) {
+  navButtons[i].addEventListener("click", onClick);
+}
