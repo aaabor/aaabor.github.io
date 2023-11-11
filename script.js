@@ -1,6 +1,9 @@
 const PANEL_DISPLAY_TIME = 8000;
+const INTERVAL_UPDATE_TIME = PANEL_DISPLAY_TIME / 400;
+var displayTime = 0;
 var slider = document.getElementById("slider");
 var panels = document.getElementsByClassName("slider-panel");
+var progressBar = document.getElementById("slider-progress");
 var hovering = false;
 var changePanel = false;
 var currentPanel = 0;
@@ -16,11 +19,11 @@ function removeActiveClass(p) {
 }
 
 function nextPanel() {
-  if (hovering) {
-    changePanel = true;
-    clearInterval(panelInterval);
-    return;
-  }
+  // if (hovering) {
+  //   changePanel = true;
+  //   clearInterval(panelInterval);
+  //   return;
+  // }
 
   removeActiveClass(panels[currentPanel]);
   
@@ -41,17 +44,29 @@ function prevPanel() {
   addActiveClass(panels[currentPanel]);
 }
 
+function update() {
+  if (!hovering) {
+    displayTime += INTERVAL_UPDATE_TIME;
+    if (displayTime >= PANEL_DISPLAY_TIME) {
+      nextPanel();
+      displayTime = 0;
+    }
+    newWidth = 'width: ' + ((displayTime / PANEL_DISPLAY_TIME) * 100) + '%';
+    progressBar.setAttribute("style", newWidth);
+  }
+}
+
 function onHover(_) {
   hovering = true;
 }
 
 function onLeave(_) {
   hovering = false;
-  if (changePanel) {
-    changePanel = false;
-    nextPanel();
-    panelInterval = setInterval(nextPanel, PANEL_DISPLAY_TIME);
-  }
+  // if (changePanel) {
+  //   changePanel = false;
+  //   nextPanel();
+  //   panelInterval = setInterval(nextPanel, PANEL_DISPLAY_TIME);
+  // }
 }
 
 for (p of panels) {
@@ -60,6 +75,6 @@ for (p of panels) {
 
 addActiveClass(panels[0]);
 
-panelInterval = setInterval(nextPanel, PANEL_DISPLAY_TIME);
+panelInterval = setInterval(update, INTERVAL_UPDATE_TIME);
 slider.addEventListener("mouseover", onHover);
 slider.addEventListener("mouseout", onLeave);
