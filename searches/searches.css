@@ -1,0 +1,98 @@
+html {
+  font-family: sans-serif;
+  background-color: #f3f3f3;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+#title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight:700;
+  margin-bottom: 40px;
+}
+
+#nav-tabs {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.35rem;
+  font-weight: 500;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 20px;
+}
+
+.tab:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tab.active {
+  color: #0077d9;
+  text-decoration: underline;
+}
+
+.search-group {
+  display: none;
+}
+
+.search-group.active {
+  display: block;
+}
+
+.search-block {
+  margin-bottom: 60px;
+}
+
+.search-title .search-type {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.search-title, .contact-name {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.search-criteria {
+  margin-left: 30px;
+}
+
+.search-criteria.indent {
+  margin-left: 60px;
+}
+
+.search-criteria b::after {
+  content: ":";
+}
+
+.contact-block {
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.contact-block .contact-name {
+  margin-bottom: 20px;
+}
+
+.contact-block .empty {
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+
+.contact-block .search-block {
+  margin-left: 30px;
+}
+
+.contact-block .search-block .search-title {
+  font-size: 1.5rem;
+}
+
+.contact-block .search-block .search-title .search-type {
+  font-size: 1rem;
+}
