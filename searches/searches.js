@@ -15,7 +15,7 @@ function onClick(e) {
     clearActive();
 
     e.target.setAttribute("class", e.target.getAttribute("class") + " active");
-    
+
     let group = document.getElementById(e.target.getAttribute("data-tab"));
     group.setAttribute("class", group.getAttribute("class") + " active");
 }

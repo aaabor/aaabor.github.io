@@ -11,9 +11,8 @@
             <h1 id="title">Search Criteria for Kristin King</h1>
             <div id="nav-tabs">
                 <div class="tab active" data-tab="saved-searches">Saved Searches</div>
-                <div class="tab" data-tab="contact-searches">Contact Searches</div>
-                <div class="tab" data-tab="mobile-searches">Mobile App Searches</div>
-                <div class="tab" data-tab="mobile-contact-searches">Mobile App Contact Searches</div>
+                <div class="tab" data-tab="active-contact-searches">Active Contact Searches</div>
+                <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
                 <div class="search-block">
@@ -32,8 +31,21 @@
                     <div class="search-criteria"><B>Property Type</B>  Rental</div>
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active, Active-Contingent, Active-LTC</div>
                 </div>
+                <div class="search-block">
+                    <div class="search-title">R&A <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria indent">FSO</div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
+                    <div class="search-criteria"><span><B>Bathrooms</B> 2.00 or more</span></div>
+                    <div class="search-criteria"><span><B>Counties</B> Washtenaw; Livingston; Jackson; Lenawee</span></div>
+                    <div class="search-criteria"><span><B>Acreage</B> 1.00 ac or more</span></div>
+                    <div class="search-criteria indent">N</div>
+                    <div class="search-criteria"><span><B>Price</B> $250,000 to $500,000</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                    <div class="search-criteria"><span><B>Year Built</B> 2011 or more</span></div>
+                </div>
             </div>
-            <div id="contact-searches" class="search-group">
+            <div id="active-contact-searches" class="search-group">
                     <div class="contact-block">
                         <div class="contact-name">Ethan Young</div>
                         <div class="empty">No searches found</div>
@@ -52,7 +64,11 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Ron Whitaker</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">Jackson County Excluding Jackson City Limits <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Scott Sterberg</div>
@@ -66,50 +82,7 @@
                         </div>
                     </div>
             </div>
-            <div id="mobile-searches" class="search-group">
-                <div class="search-block">
-                    <div class="search-title">R&A</div>
-                    <div class="search-criteria indent">FSO</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
-                    <div class="search-criteria"><span><B>Bathrooms</B> 2.00 or more</span></div>
-                    <div class="search-criteria"><span><B>Counties</B> Washtenaw; Livingston; Jackson; Lenawee</span></div>
-                    <div class="search-criteria"><span><B>Acreage</B> 1.00 ac or more</span></div>
-                    <div class="search-criteria indent">N</div>
-                    <div class="search-criteria"><span><B>Price</B> $250,000 to $500,000</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                    <div class="search-criteria"><span><B>Year Built</B> 2011 or more</span></div>
-                </div>
-            </div>
-            <div id="mobile-contact-searches" class="search-group">
-                    <div class="contact-block">
-                        <div class="contact-name">Ethan Young</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">James O'Bryan</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Kristin King</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Reed and Alison</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Ron Whitaker</div>
-                        <div class="search-block">
-                            <div class="search-title">Jackson County Excluding Jackson City Limits</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Scott Sterberg</div>
-                        <div class="empty">No searches found</div>
-                    </div>
+            <div id="inactive-contact-searches" class="search-group">
             </div>
         </div>
         <script src="../searches.js"></script>

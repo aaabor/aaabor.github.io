@@ -11,9 +11,8 @@
             <h1 id="title">Search Criteria for Joseph Kreder</h1>
             <div id="nav-tabs">
                 <div class="tab active" data-tab="saved-searches">Saved Searches</div>
-                <div class="tab" data-tab="contact-searches">Contact Searches</div>
-                <div class="tab" data-tab="mobile-searches">Mobile App Searches</div>
-                <div class="tab" data-tab="mobile-contact-searches">Mobile App Contact Searches</div>
+                <div class="tab" data-tab="active-contact-searches">Active Contact Searches</div>
+                <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
                 <div class="search-block">
@@ -31,7 +30,7 @@
                     <div class="search-criteria"><B>School District Name</B>  Ann Arbor</div>
                 </div>
             </div>
-            <div id="contact-searches" class="search-group">
+            <div id="active-contact-searches" class="search-group">
                     <div class="contact-block">
                         <div class="contact-name">F Shaw</div>
                         <div class="search-block">
@@ -45,30 +44,8 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Joe Kreder</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-            </div>
-            <div id="mobile-searches" class="search-group">
-                   <div class="empty">No Searches Found</div>
-            </div>
-            <div id="mobile-contact-searches" class="search-group">
-                    <div class="contact-block">
-                        <div class="contact-name">F Shaw</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Joe Kreder</div>
                         <div class="search-block">
-                            <div class="search-title">vacant land</div>
-                    <div class="search-criteria"><span><B>Property Type</B> LOTL</span></div>
-                    <div class="search-criteria"><span><B>Contains selected listings.</B> </span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Acreage</B> 2 ac to 100 ac</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $400,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">residential</div>
+                            <div class="search-title">residential <span class="search-type">(Map Search)</span></div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
                     <div class="search-criteria"><span><B>Full Bathrooms</B> 3.00 or more</span></div>
@@ -78,7 +55,18 @@
                     <div class="search-criteria"><B>Basement Type</B>  Finished AND Full</div>
                     <div class="search-criteria"><B>Garage Features</B>  Exclude Carport AND None</div>
                         </div>
+                        <div class="search-block">
+                            <div class="search-title">vacant land <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> LOTL</span></div>
+                    <div class="search-criteria"><span><B>Contains selected listings.</B> </span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Acreage</B> 2 ac to 100 ac</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $400,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
+            </div>
+            <div id="inactive-contact-searches" class="search-group">
             </div>
         </div>
         <script src="../searches.js"></script>

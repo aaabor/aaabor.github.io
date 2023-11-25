@@ -11,11 +11,18 @@
             <h1 id="title">Search Criteria for Brian Auten</h1>
             <div id="nav-tabs">
                 <div class="tab active" data-tab="saved-searches">Saved Searches</div>
-                <div class="tab" data-tab="contact-searches">Contact Searches</div>
-                <div class="tab" data-tab="mobile-searches">Mobile App Searches</div>
-                <div class="tab" data-tab="mobile-contact-searches">Mobile App Contact Searches</div>
+                <div class="tab" data-tab="active-contact-searches">Active Contact Searches</div>
+                <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="search-block">
+                    <div class="search-title">375 <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Acreage</B> 1.00 ac or more</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $375,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                </div>
                 <div class="search-block">
                     <div class="search-title">My Market Watch Area <span class="search-type">(Standard Search)</span></div>
                     <div class="search-criteria indent">CriteriaText failed, type RegionArea: System.ArgumentOutOfRangeException: Index and count must refer to a location within the string._Parameter name: count_   at System.String.Remove(Int32 startIndex, Int32 count)_   at Rapattoni.MLS10.Business.RegionAreaSearchOption.CriteriaText()_   at Rapattoni.MLS10.Business.SearchEngine.GetOptionsXml(XmlTextWriter& writer)</div>
@@ -29,7 +36,7 @@
                     <div class="search-criteria"><B>Statuses</B>  Active, Active-CTS, Active-LTC</div>
                 </div>
             </div>
-            <div id="contact-searches" class="search-group">
+            <div id="active-contact-searches" class="search-group">
                     <div class="contact-block">
                         <div class="contact-name">Aaron</div>
                         <div class="search-block">
@@ -43,32 +50,7 @@
                         </div>
                     </div>
                     <div class="contact-block">
-                        <div class="contact-name">Aaron Cherny</div>
-                        <div class="search-block">
-                            <div class="search-title">Rental <span class="search-type">(Map Search)</span></div>
-                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
-                    <div class="search-criteria"><B>Price</B>  1,400 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
                         <div class="contact-name">Adam Cimaroli</div>
-                        <div class="search-block">
-                            <div class="search-title">saline <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
-                    <div class="search-criteria"><B>Price</B>  350,000 to 500,000</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                    <div class="search-criteria"><B>School District Name</B>  Ann Arbor</div>
-                    <div class="search-criteria indent">OR Chelsea</div>
-                    <div class="search-criteria indent">OR Dexter</div>
-                    <div class="search-criteria indent">OR Plymouth Canton</div>
-                    <div class="search-criteria indent">OR Saline</div>
-                    <div class="search-criteria"><B>SF Finishd Abv Grade</B>  2200.000 or more</div>
-                        </div>
                         <div class="search-block">
                             <div class="search-title">4 bedroom pool <span class="search-type">(Standard Search)</span></div>
                     <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
@@ -82,6 +64,20 @@
                     <div class="search-criteria indent">OR Dexter</div>
                     <div class="search-criteria indent">OR Plymouth Canton</div>
                     <div class="search-criteria indent">OR Saline</div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-title">saline <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
+                    <div class="search-criteria"><B>Price</B>  350,000 to 500,000</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                    <div class="search-criteria"><B>School District Name</B>  Ann Arbor</div>
+                    <div class="search-criteria indent">OR Chelsea</div>
+                    <div class="search-criteria indent">OR Dexter</div>
+                    <div class="search-criteria indent">OR Plymouth Canton</div>
+                    <div class="search-criteria indent">OR Saline</div>
+                    <div class="search-criteria"><B>SF Finishd Abv Grade</B>  2200.000 or more</div>
                         </div>
                     </div>
                     <div class="contact-block">
@@ -132,10 +128,6 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Angie Jensen</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Annette Leone</div>
                         <div class="empty">No searches found</div>
                     </div>
                     <div class="contact-block">
@@ -298,6 +290,12 @@
                     <div class="contact-block">
                         <div class="contact-name">Bruce DeWerth</div>
                         <div class="search-block">
+                            <div class="search-title">100k <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
+                        <div class="search-block">
                             <div class="search-title">100k <span class="search-type">(Standard Search)</span></div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Ann Arbor, Milan, Saline, Whitmore Lake, Ypsilanti</div>
@@ -310,19 +308,19 @@
                     <div class="contact-block">
                         <div class="contact-name">Bruce Taylor</div>
                         <div class="search-block">
-                            <div class="search-title">Home search <span class="search-type">(Standard Search)</span></div>
+                            <div class="search-title">220 <span class="search-type">(Standard Search)</span></div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>Cities</B>  Dexter, Lodi, Milan, Pittsfield, Saline, Scio</div>
-                    <div class="search-criteria"><B>Price</B>  200,000 or less</div>
+                    <div class="search-criteria"><B>Cities</B>  Ann Arbor, Dexter, Lodi, Milan, Pittsfield, Saline, Scio</div>
+                    <div class="search-criteria"><B>Price</B>  200,000 to 240,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">220 <span class="search-type">(Standard Search)</span></div>
+                            <div class="search-title">Home search <span class="search-type">(Standard Search)</span></div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>Cities</B>  Ann Arbor, Dexter, Lodi, Milan, Pittsfield, Saline, Scio</div>
-                    <div class="search-criteria"><B>Price</B>  200,000 to 240,000</div>
+                    <div class="search-criteria"><B>Cities</B>  Dexter, Lodi, Milan, Pittsfield, Saline, Scio</div>
+                    <div class="search-criteria"><B>Price</B>  200,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
@@ -362,26 +360,6 @@
                         </div>
                     </div>
                     <div class="contact-block">
-                        <div class="contact-name">Carly Collins</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Carmen Beste</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Carolyn Estopinal</div>
-                        <div class="search-block">
-                            <div class="search-title">Rental <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>City</B>  Ann Arbor</div>
-                    <div class="search-criteria"><B>Price</B>  1,500 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
                         <div class="contact-name">Carrie Commissaris</div>
                         <div class="search-block">
                             <div class="search-title">1 st search <span class="search-type">(Map Search)</span></div>
@@ -399,29 +377,6 @@
                     <div class="search-criteria indent">OR Partial</div>
                     <div class="search-criteria indent">OR Plumbed for Bath</div>
                     <div class="search-criteria indent">OR Walkout</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Charla Engelmeyer</div>
-                        <div class="search-block">
-                            <div class="search-title">Engelmeyer <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>Cities</B>  Belleville, Canton, Romulus</div>
-                    <div class="search-criteria"><B>Price</B>  150,000 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">Ypsi township <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>Price</B>  150,000 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                    <div class="search-criteria"><B>Township</B>  *ypsilanti*</div>
                         </div>
                     </div>
                     <div class="contact-block">
@@ -447,19 +402,18 @@
                         </div>
                     </div>
                     <div class="contact-block">
-                        <div class="contact-name">Chris</div>
-                        <div class="search-block">
-                            <div class="search-title">Rental <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>Cities</B>  Ann Arbor, Saline, Ypsilanti</div>
-                    <div class="search-criteria"><B>Price</B>  1,300 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
                         <div class="contact-name">Chris & Stephne Hilgendorf</div>
+                        <div class="search-block">
+                            <div class="search-title">Okemos <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Bathrooms</B>  2.00 or more</div>
+                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
+                    <div class="search-criteria"><B>Acreage</B>  1.00 ac or more</div>
+                    <div class="search-criteria"><B>Price</B>  200,000 to 600,000</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                    <div class="search-criteria"><B>School District Name</B>  Okemos</div>
+                        </div>
                         <div class="search-block">
                             <div class="search-title">hilgendorf 550 <span class="search-type">(Standard Search)</span></div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
@@ -471,17 +425,6 @@
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active</div>
                     <div class="search-criteria"><B>School District Name</B>  Chelsea</div>
                     <div class="search-criteria"><B>SF Finishd Abv Grade</B>  2000 or more</div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">Okemos <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Bathrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>Acreage</B>  1.00 ac or more</div>
-                    <div class="search-criteria"><B>Price</B>  200,000 to 600,000</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                    <div class="search-criteria"><B>School District Name</B>  Okemos</div>
                         </div>
                     </div>
                     <div class="contact-block">
@@ -532,7 +475,12 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Christine and Angelo</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">saline <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Cindy Lee</div>
@@ -585,7 +533,19 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Conrad Feller</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">condos <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-title">ypsilanti <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $300,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Cora LaRoy</div>
@@ -666,6 +626,15 @@
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
+                        <div class="search-block">
+                            <div class="search-title">500k <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Bedrooms</B> 4.00 or more</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $400,000 to $515,000</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                    <div class="search-criteria"><B>Basement Type</B>  Finished</div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">David DeVellis</div>
@@ -699,17 +668,14 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">DeAnna McDaniel</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Debbie Metler</div>
                         <div class="search-block">
-                            <div class="search-title">Metler Single Family <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>City</B>  Ann Arbor</div>
-                    <div class="search-criteria"><B>Price</B>  50,000 to 160,000</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
+                            <div class="search-title">500k <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $500,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Property Subtype</B> SING</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
                         </div>
                     </div>
                     <div class="contact-block">
@@ -742,20 +708,6 @@
                     <div class="contact-block">
                         <div class="contact-name">Doris & Earl Roehm</div>
                         <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Doug Esper and Mandy Flutur</div>
-                        <div class="search-block">
-                            <div class="search-title">Doug and Mandy <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Bathrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>Cities</B>  Commerce, Milford, New Hudson, South Lyon</div>
-                    <div class="search-criteria"><B>Acreage</B>  .25 ac or more</div>
-                    <div class="search-criteria"><B>Price</B>  200,000 to 300,000</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Elizabeth Hoffmann</div>
@@ -794,18 +746,6 @@
                         </div>
                     </div>
                     <div class="contact-block">
-                        <div class="contact-name">Eric Keller</div>
-                        <div class="search-block">
-                            <div class="search-title">Keller, Eric <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>Price</B>  100,000 to 230,000</div>
-                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                    <div class="search-criteria"><B>Zip Codes</B>  48103,  48104,  48105, 48108</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
                         <div class="contact-name">Erik & Laura Wiliams</div>
                         <div class="search-block">
                             <div class="search-title">Ann Arbor single fam <span class="search-type">(Standard Search)</span></div>
@@ -817,9 +757,18 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">ann arbor condo <span class="search-type">(Standard Search)</span></div>
+                            <div class="search-title">New Search <span class="search-type">(Standard Search)</span></div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>City</B>  Ann Arbor</div>
+                    <div class="search-criteria"><B>Cities</B>  Ann Arbor, Canton, Northville, Plymouth, Royal Oak, Saline, South Lyon</div>
+                    <div class="search-criteria"><B>Price</B>  250,000 to 500,000</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-title">Plymouth condo <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
+                    <div class="search-criteria"><B>City</B>  Plymouth</div>
                     <div class="search-criteria"><B>Price</B>  150,000 to 500,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -835,20 +784,11 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Plymouth condo <span class="search-type">(Standard Search)</span></div>
+                            <div class="search-title">ann arbor condo <span class="search-type">(Standard Search)</span></div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>City</B>  Plymouth</div>
+                    <div class="search-criteria"><B>City</B>  Ann Arbor</div>
                     <div class="search-criteria"><B>Price</B>  150,000 to 500,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">New Search <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>Cities</B>  Ann Arbor, Canton, Northville, Plymouth, Royal Oak, Saline, South Lyon</div>
-                    <div class="search-criteria"><B>Price</B>  250,000 to 500,000</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
@@ -884,7 +824,22 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Fahid Ramlawi</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">375 <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Acreage</B> 1.00 ac or more</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $375,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-title">375 <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Acreage</B> 1.00 ac or more</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $375,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Felix Robertson</div>
@@ -904,11 +859,23 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Hakam Salman</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">275k <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Harsha Nand</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">condos <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $280,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Property Subtype</B> CNDO</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Heather Lovings</div>
@@ -953,13 +920,13 @@
                     <div class="contact-block">
                         <div class="contact-name">James Lipford</div>
                         <div class="search-block">
-                            <div class="search-title">ranch 300k <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
-                    <div class="search-criteria"><B>Mailing Cities</B>  Garden City, Livonia, Romulus, Westland</div>
-                    <div class="search-criteria"><B>Price</B>  100,000 to 350,000</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active</div>
+                            <div class="search-title">400 ranch <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Bedrooms</B> 4.00 or more</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $400,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Property Subtype</B> Single Family</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
                     <div class="search-criteria"><B>Style/Architecture</B>  Ranch</div>
                         </div>
                         <div class="search-block">
@@ -969,10 +936,26 @@
                     <div class="search-criteria"><B>Property Type</B>  Land</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
+                        <div class="search-block">
+                            <div class="search-title">ranch 300k <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
+                    <div class="search-criteria"><B>Mailing Cities</B>  Garden City, Livonia, Romulus, Westland</div>
+                    <div class="search-criteria"><B>Price</B>  100,000 to 350,000</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active</div>
+                    <div class="search-criteria"><B>Style/Architecture</B>  Ranch</div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Janelle</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">rental <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RENT</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $1,800 or less</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Jarrad Mitchell</div>
@@ -982,23 +965,6 @@
                     <div class="search-criteria"><B>Price</B>  100,000 to 180,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jason Quint</div>
-                        <div class="search-block">
-                            <div class="search-title">Barclay Park <span class="search-type">(Map Search)</span></div>
-                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
-                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">Wellesely <span class="search-type">(Map Search)</span></div>
-                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
-                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                     </div>
@@ -1035,16 +1001,6 @@
                     <div class="contact-block">
                         <div class="contact-name">Jeff and Stephanie Klaver</div>
                         <div class="search-block">
-                            <div class="search-title">Outbuildings <span class="search-type">(Map Search)</span></div>
-                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>Acreage</B>  1 ac or more</div>
-                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
-                    <div class="search-criteria"><B>Price</B>  300,000 or less</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                    <div class="search-criteria"><B>Outside Features</B>  Outbuilding</div>
-                        </div>
-                        <div class="search-block">
                             <div class="search-title">Attached/Detached <span class="search-type">(Map Search)</span></div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Acreage</B>  1 ac or more</div>
@@ -1055,18 +1011,15 @@
                     <div class="search-criteria"><B>Garage</B>  Attached</div>
                     <div class="search-criteria indent">AND Detached</div>
                         </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jennifer Drechnowicz</div>
                         <div class="search-block">
-                            <div class="search-title">Single family <span class="search-type">(Map Search)</span></div>
-                    <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
+                            <div class="search-title">Outbuildings <span class="search-type">(Map Search)</span></div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>Map Search</B>  Polygon, Polygon</div>
-                    <div class="search-criteria"><B>Price</B>  160,000 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
+                    <div class="search-criteria"><B>Acreage</B>  1 ac or more</div>
+                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
+                    <div class="search-criteria"><B>Price</B>  300,000 or less</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
+                    <div class="search-criteria"><B>Outside Features</B>  Outbuilding</div>
                         </div>
                     </div>
                     <div class="contact-block">
@@ -1204,6 +1157,11 @@
                     <div class="contact-block">
                         <div class="contact-name">Jim Bojack</div>
                         <div class="search-block">
+                            <div class="search-title">350k <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
+                        <div class="search-block">
                             <div class="search-title">350k <span class="search-type">(Standard Search)</span></div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Ann Arbor, Chelsea, Dexter, Milan, Saline, Ypsilanti</div>
@@ -1249,7 +1207,12 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Joe</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">cliffs <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Joe & Anna French</div>
@@ -1264,6 +1227,17 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Joe & Anna French</div>
+                        <div class="search-block">
+                            <div class="search-title">150k <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-title">150k <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> INCP</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                         <div class="search-block">
                             <div class="search-title">Land <span class="search-type">(Standard Search)</span></div>
                     <div class="search-criteria"><B>Counties</B>  Lenawee, Livingston, Monroe, Washtenaw</div>
@@ -1301,6 +1275,11 @@
                     <div class="contact-block">
                         <div class="contact-name">Jon Reisterer</div>
                         <div class="search-block">
+                            <div class="search-title">geddes sub <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                        <div class="search-block">
                             <div class="search-title">search2 <span class="search-type">(Standard Search)</span></div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Ann Arbor, Pittsfield</div>
                     <div class="search-criteria"><B>Price</B>  225,000 or less</div>
@@ -1314,11 +1293,6 @@
                     <div class="search-criteria"><B>Price</B>  225,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">geddes sub <span class="search-type">(Map Search)</span></div>
-                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                     </div>
@@ -1340,18 +1314,18 @@
                     <div class="contact-block">
                         <div class="contact-name">Julia</div>
                         <div class="search-block">
-                            <div class="search-title">rental <span class="search-type">(Map Search)</span></div>
-                    <div class="search-criteria"><B>Map Search</B>  Radius: 1.52 mi.</div>
-                    <div class="search-criteria"><B>Price</B>  1,500 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                        <div class="search-block">
                             <div class="search-title">Barclay Park <span class="search-type">(Map Search)</span></div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon</div>
                     <div class="search-criteria"><B>Price</B>  1,600 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
+                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-title">rental <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><B>Map Search</B>  Radius: 1.52 mi.</div>
+                    <div class="search-criteria"><B>Price</B>  1,500 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Rental</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
@@ -1369,29 +1343,21 @@
                         </div>
                     </div>
                     <div class="contact-block">
-                        <div class="contact-name">Julie McLaughlin</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Julie Quiroz</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
                         <div class="contact-name">Karen Driggs</div>
+                        <div class="search-block">
+                            <div class="search-title">Pittsfield <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
+                    <div class="search-criteria"><B>Price</B>  1,700 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
+                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
                         <div class="search-block">
                             <div class="search-title">Rental <span class="search-type">(Map Search)</span></div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon</div>
                     <div class="search-criteria"><B>Price</B>  1,700 or less</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">Pittsfield <span class="search-type">(Map Search)</span></div>
-                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
-                    <div class="search-criteria"><B>Price</B>  1,700 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
                     <div class="search-criteria"><B>Property Type</B>  Rental</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
@@ -1416,31 +1382,6 @@
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active</div>
                     <div class="search-criteria"><B>School District Name</B>  Dexter</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Keith Richard</div>
-                        <div class="search-block">
-                            <div class="search-title">Condo <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>City</B>  Ann Arbor</div>
-                    <div class="search-criteria"><B>Price</B>  250,000 to 350,000</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                    <div class="search-criteria"><B>SF Finishd Abv Grade</B>  1500 to 2200</div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">Single Family <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>City</B>  Ann Arbor</div>
-                    <div class="search-criteria"><B>Price</B>  250,000 to 350,000</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                    <div class="search-criteria"><B>SF Finishd Abv Grade</B>  1500 to 2200</div>
                         </div>
                     </div>
                     <div class="contact-block">
@@ -1469,15 +1410,32 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Kelsey Platt</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">rental <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RENT</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Keri Roche</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">250k <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $250,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Property Subtype</B> SING</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Kevin & Lori Eilerman</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">clark lake <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 2 Shapes</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Krishan Agrawal</div>
@@ -1592,21 +1550,21 @@
                     <div class="contact-block">
                         <div class="contact-name">Liz Osborn</div>
                         <div class="search-block">
+                            <div class="search-title">Condos <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
+                    <div class="search-criteria"><B>Mailing City</B>  Ann Arbor</div>
+                    <div class="search-criteria"><B>Price</B>  400,000 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                        <div class="search-block">
                             <div class="search-title">single family <span class="search-type">(Map Search)</span></div>
                     <div class="search-criteria"><B>Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Map Search</B>  Radius: 2.15 mi.</div>
                     <div class="search-criteria"><B>Price</B>  400,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">Condos <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>Mailing City</B>  Ann Arbor</div>
-                    <div class="search-criteria"><B>Price</B>  400,000 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
@@ -1640,26 +1598,16 @@
                         </div>
                     </div>
                     <div class="contact-block">
-                        <div class="contact-name">Lynn Speed</div>
-                        <div class="search-block">
-                            <div class="search-title">Rental search <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Full Bathrooms</B>  1.00 or more   <B>1/2 Bathrooms</B>  1.00 or more</div>
-                    <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>Cities</B>  Ann Arbor, Pittsfield, Plymouth</div>
-                    <div class="search-criteria"><B>Price</B>  1,600 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                    <div class="search-criteria"><B>Pets Allowed</B>  exclude No</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
                         <div class="contact-name">Marcia Pickard</div>
                         <div class="empty">No searches found</div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Marina</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">land <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> LOTL</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Mark Quint</div>
@@ -1745,6 +1693,18 @@
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
+                        <div class="search-block">
+                            <div class="search-title">Condos <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-title">ypsi township <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 2 Shapes</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Nicole Levy</div>
@@ -1782,22 +1742,11 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Pam Beaugrand</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Patrick Young</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Patrick Young</div>
                         <div class="search-block">
-                            <div class="search-title">NE <span class="search-type">(Map Search)</span></div>
-                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>Map Search</B>  Polygon, Polygon</div>
-                    <div class="search-criteria"><B>Price</B>  450,000 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
+                            <div class="search-title">condos <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
                         </div>
                     </div>
                     <div class="contact-block">
@@ -1812,7 +1761,14 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Pranay</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">Condos <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $300,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Property Subtype</B> CNDO</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Ramyz Tadros</div>
@@ -1851,16 +1807,6 @@
                     <div class="contact-block">
                         <div class="contact-name">Renee Shea</div>
                         <div class="search-block">
-                            <div class="search-title">Single Family <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>Cities</B>  Ann Arbor, Dexter, Pittsfield, Saline, Scio</div>
-                    <div class="search-criteria"><B>Price</B>  300,000 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                        <div class="search-block">
                             <div class="search-title">Rental <span class="search-type">(Standard Search)</span></div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
@@ -1871,8 +1817,12 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">huron farms <span class="search-type">(Map Search)</span></div>
-                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
+                            <div class="search-title">Single Family <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
+                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
+                    <div class="search-criteria"><B>Cities</B>  Ann Arbor, Dexter, Pittsfield, Saline, Scio</div>
+                    <div class="search-criteria"><B>Price</B>  300,000 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
@@ -1882,28 +1832,11 @@
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Robert Griswold</div>
                         <div class="search-block">
-                            <div class="search-title">Rental <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Bedrooms</B>  1.00 or more</div>
-                    <div class="search-criteria"><B>City</B>  Ann Arbor</div>
-                    <div class="search-criteria"><B>Price</B>  1,400 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
+                            <div class="search-title">huron farms <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
-                    <div class="search-criteria"><B>Pets Allowed</B>  exclude No</div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">Ypsilanti rentals <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Bedrooms</B>  1.00 or more</div>
-                    <div class="search-criteria"><B>City</B>  Ypsilanti</div>
-                    <div class="search-criteria"><B>Price</B>  1,400 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                    <div class="search-criteria"><B>Pets Allowed</B>  exclude No</div>
                         </div>
                     </div>
                     <div class="contact-block">
@@ -1921,7 +1854,14 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Robert Jurcago</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">waterfront <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 4 Shapes</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $225,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Property Subtypes</B> CNDO</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Robert Kesto</div>
@@ -1932,17 +1872,6 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                     <div class="search-criteria"><B>Paved</B>  Yes</div>
                     <div class="search-criteria"><B>School District Name</B>  Saline</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Robertson, Felix</div>
-                        <div class="search-block">
-                            <div class="search-title">614645 <span class="search-type">(Map Search)</span></div>
-                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
-                    <div class="search-criteria"><B>Price</B>  1,000 to 30,000</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Statuses</B>  Active, Active-CTS, Active-LTC</div>
                         </div>
                     </div>
                     <div class="contact-block">
@@ -1974,18 +1903,6 @@
                         </div>
                     </div>
                     <div class="contact-block">
-                        <div class="contact-name">Ryan Sweeden- Maragaret Hudson</div>
-                        <div class="search-block">
-                            <div class="search-title">downtown <span class="search-type">(Map Search)</span></div>
-                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
-                    <div class="search-criteria"><B>Price</B>  350,000 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
                         <div class="contact-name">Ryann Cline</div>
                         <div class="search-block">
                             <div class="search-title">pittsfield 200k <span class="search-type">(Standard Search)</span></div>
@@ -2007,10 +1924,6 @@
                     <div class="search-criteria"><B>Property Type</B>  Rental</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Sakthish Sathasivami</div>
-                        <div class="empty">No searches found</div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Sara</div>
@@ -2044,19 +1957,6 @@
                     <div class="search-criteria"><B>Price</B>  1,800 or less</div>
                     <div class="search-criteria"><B>Property Type</B>  Rental</div>
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Shannon Morgan</div>
-                        <div class="search-block">
-                            <div class="search-title">Saline <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Full Bathrooms</B>  2.00 or more   <B>1/2 Bathrooms</B>  1.00 or more</div>
-                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>Price</B>  500,000 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                    <div class="search-criteria"><B>High School</B>  *saline*</div>
                         </div>
                     </div>
                     <div class="contact-block">
@@ -2153,6 +2053,13 @@
                     <div class="search-criteria"><B>Property Type</B>  Commercial</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
+                        <div class="search-block">
+                            <div class="search-title">under 200K <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $200,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Susan Pile</div>
@@ -2175,7 +2082,15 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">TJ & Alyssa Brown</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">250 k <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Acreage</B> 0.50 ac or more</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $250,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Property Subtype</B> Single Family</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Tanner Frisch</div>
@@ -2190,7 +2105,14 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Tareck Ramlawi</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">land <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> LOTL</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Acreage</B> 10.00 ac or less</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $200,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Theresa Mark</div>
@@ -2250,25 +2172,30 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Timothy James</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Todd Gerlach</div>
                         <div class="search-block">
-                            <div class="search-title">Dexter <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Full Bathrooms</B>  1.00 or more   <B>1/2 Bathrooms</B>  1.00 or more</div>
-                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>City</B>  Dexter</div>
-                    <div class="search-criteria"><B>Price</B>  100,000 to 250,000</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                    <div class="search-criteria"><B>SF Finishd Abv Grade</B>  1400 to 4000</div>
+                            <div class="search-title">350K <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $350,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Tommy & Jenn</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">map <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Acreage</B> 10 ac or more</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $275,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-title">map <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Tracey Bradley</div>
@@ -2308,7 +2235,24 @@
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Ty Morgan</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">300k <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
+                    <div class="search-criteria"><span><B>SF Finishd Abv Grade</B> 2000 or more</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $300,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Property Subtype</B> Single Family</span></div>
+                    <div class="search-criteria"><span><B>Statuses</B> Coming Soon, Active</span></div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-title">rental <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RENT</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $1,800 to $2,500</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Tyler & Kayle Allen</div>
@@ -2344,10 +2288,6 @@
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Vivian Hindbaugh</div>
-                        <div class="empty">No searches found</div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">William Young</div>
@@ -2386,16 +2326,6 @@
                     <div class="search-criteria"><B>Zip Code</B>  48105</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">radius <span class="search-type">(Radius Search)</span></div>
-                    <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
-                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
-                    <div class="search-criteria"><B>Price</B>  200,000 to 375,000</div>
-                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Radius Address</B>  2601 Glazier, Ann Arbor, mi 48105  <B>Radius</B>  4.00 Miles</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                        <div class="search-block">
                             <div class="search-title">Dixboro <span class="search-type">(Map Search)</span></div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
@@ -2405,13 +2335,368 @@
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
+                        <div class="search-block">
+                            <div class="search-title">radius <span class="search-type">(Radius Search)</span></div>
+                    <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
+                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
+                    <div class="search-criteria"><B>Price</B>  200,000 to 375,000</div>
+                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Radius Address</B>  2601 Glazier, Ann Arbor, mi 48105  <B>Radius</B>  4.00 Miles</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">bob bartels</div>
-                        <div class="empty">No searches found</div>
+                        <div class="search-block">
+                            <div class="search-title">375 <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $150,000 to $370,000</span></div>
+                    <div class="search-criteria"><span><B>Property Subtype</B> SING</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                    <div class="search-criteria"><B>Garage Features</B>  Attached OR Detached</div>
+                        </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">brian auten</div>
+                        <div class="search-block">
+                            <div class="search-title">kean <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Price</B> $240,000 or less</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-title">mirage lake <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Types</B> RESI, LOTL</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">eric walters</div>
+                        <div class="search-block">
+                            <div class="search-title">150k <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Mailing Cities</B>  Dundee, Milan, Ypsilanti</div>
+                    <div class="search-criteria"><B>Price</B>  150,000 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condominium, Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">nicole</div>
+                        <div class="search-block">
+                            <div class="search-title">Condos <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
+                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
+                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">s.ford</div>
+                        <div class="search-block">
+                            <div class="search-title">300k <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Price</B>  200,000 to 300,000</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                    <div class="search-criteria"><B>Zip Code</B>  48197</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">sherri mcneill</div>
+                        <div class="search-block">
+                            <div class="search-title">condo <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                    </div>
+            </div>
+            <div id="inactive-contact-searches" class="search-group">
+                    <div class="contact-block">
+                        <div class="contact-name">Aaron Cherny</div>
+                        <div class="search-block">
+                            <div class="search-title">Rental <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
+                    <div class="search-criteria"><B>Price</B>  1,400 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Annette Leone</div>
+                        <div class="empty">No searches found</div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Carly Collins</div>
+                        <div class="empty">No searches found</div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Carmen Beste</div>
+                        <div class="empty">No searches found</div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Carolyn Estopinal</div>
+                        <div class="search-block">
+                            <div class="search-title">Rental <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
+                    <div class="search-criteria"><B>City</B>  Ann Arbor</div>
+                    <div class="search-criteria"><B>Price</B>  1,500 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Charla Engelmeyer</div>
+                        <div class="search-block">
+                            <div class="search-title">Engelmeyer <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
+                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
+                    <div class="search-criteria"><B>Cities</B>  Belleville, Canton, Romulus</div>
+                    <div class="search-criteria"><B>Price</B>  150,000 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-title">Ypsi township <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
+                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
+                    <div class="search-criteria"><B>Price</B>  150,000 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                    <div class="search-criteria"><B>Township</B>  *ypsilanti*</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Chris</div>
+                        <div class="search-block">
+                            <div class="search-title">Rental <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
+                    <div class="search-criteria"><B>Cities</B>  Ann Arbor, Saline, Ypsilanti</div>
+                    <div class="search-criteria"><B>Price</B>  1,300 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Debbie Metler</div>
+                        <div class="search-block">
+                            <div class="search-title">Metler Single Family <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>City</B>  Ann Arbor</div>
+                    <div class="search-criteria"><B>Price</B>  50,000 to 160,000</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Doug Esper and Mandy Flutur</div>
+                        <div class="search-block">
+                            <div class="search-title">Doug and Mandy <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Bathrooms</B>  2.00 or more</div>
+                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
+                    <div class="search-criteria"><B>Cities</B>  Commerce, Milford, New Hudson, South Lyon</div>
+                    <div class="search-criteria"><B>Acreage</B>  .25 ac or more</div>
+                    <div class="search-criteria"><B>Price</B>  200,000 to 300,000</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Eric Keller</div>
+                        <div class="search-block">
+                            <div class="search-title">Keller, Eric <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
+                    <div class="search-criteria"><B>Price</B>  100,000 to 230,000</div>
+                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                    <div class="search-criteria"><B>Zip Codes</B>  48103,  48104,  48105, 48108</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Jason Quint</div>
+                        <div class="search-block">
+                            <div class="search-title">Barclay Park <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
+                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-title">Wellesely <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
+                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Jennifer Drechnowicz</div>
+                        <div class="search-block">
+                            <div class="search-title">Single family <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
+                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
+                    <div class="search-criteria"><B>Map Search</B>  Polygon, Polygon</div>
+                    <div class="search-criteria"><B>Price</B>  160,000 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Julie McLaughlin</div>
+                        <div class="empty">No searches found</div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Julie Quiroz</div>
+                        <div class="empty">No searches found</div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Keith Richard</div>
+                        <div class="search-block">
+                            <div class="search-title">Condo <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
+                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
+                    <div class="search-criteria"><B>City</B>  Ann Arbor</div>
+                    <div class="search-criteria"><B>Price</B>  250,000 to 350,000</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                    <div class="search-criteria"><B>SF Finishd Abv Grade</B>  1500 to 2200</div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-title">Single Family <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
+                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
+                    <div class="search-criteria"><B>City</B>  Ann Arbor</div>
+                    <div class="search-criteria"><B>Price</B>  250,000 to 350,000</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                    <div class="search-criteria"><B>SF Finishd Abv Grade</B>  1500 to 2200</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Lynn Speed</div>
+                        <div class="search-block">
+                            <div class="search-title">Rental search <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Full Bathrooms</B>  1.00 or more   <B>1/2 Bathrooms</B>  1.00 or more</div>
+                    <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
+                    <div class="search-criteria"><B>Cities</B>  Ann Arbor, Pittsfield, Plymouth</div>
+                    <div class="search-criteria"><B>Price</B>  1,600 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                    <div class="search-criteria"><B>Pets Allowed</B>  exclude No</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Patrick Young</div>
+                        <div class="empty">No searches found</div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Patrick Young</div>
+                        <div class="search-block">
+                            <div class="search-title">NE <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
+                    <div class="search-criteria"><B>Map Search</B>  Polygon, Polygon</div>
+                    <div class="search-criteria"><B>Price</B>  450,000 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Robert Griswold</div>
+                        <div class="search-block">
+                            <div class="search-title">Rental <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Bedrooms</B>  1.00 or more</div>
+                    <div class="search-criteria"><B>City</B>  Ann Arbor</div>
+                    <div class="search-criteria"><B>Price</B>  1,400 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                    <div class="search-criteria"><B>Pets Allowed</B>  exclude No</div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-title">Ypsilanti rentals <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Bedrooms</B>  1.00 or more</div>
+                    <div class="search-criteria"><B>City</B>  Ypsilanti</div>
+                    <div class="search-criteria"><B>Price</B>  1,400 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Rental</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                    <div class="search-criteria"><B>Pets Allowed</B>  exclude No</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Robertson, Felix</div>
+                        <div class="search-block">
+                            <div class="search-title">614645 <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
+                    <div class="search-criteria"><B>Price</B>  1,000 to 30,000</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Statuses</B>  Active, Active-CTS, Active-LTC</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Ryan Sweeden- Maragaret Hudson</div>
+                        <div class="search-block">
+                            <div class="search-title">downtown <span class="search-type">(Map Search)</span></div>
+                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
+                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
+                    <div class="search-criteria"><B>Price</B>  350,000 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Sakthish Sathasivami</div>
+                        <div class="empty">No searches found</div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Shannon Morgan</div>
+                        <div class="search-block">
+                            <div class="search-title">Saline <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Full Bathrooms</B>  2.00 or more   <B>1/2 Bathrooms</B>  1.00 or more</div>
+                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
+                    <div class="search-criteria"><B>Price</B>  500,000 or less</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                    <div class="search-criteria"><B>High School</B>  *saline*</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Todd Gerlach</div>
+                        <div class="search-block">
+                            <div class="search-title">Dexter <span class="search-type">(Standard Search)</span></div>
+                    <div class="search-criteria"><B>Full Bathrooms</B>  1.00 or more   <B>1/2 Bathrooms</B>  1.00 or more</div>
+                    <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
+                    <div class="search-criteria"><B>City</B>  Dexter</div>
+                    <div class="search-criteria"><B>Price</B>  100,000 to 250,000</div>
+                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
+                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
+                    <div class="search-criteria"><B>Status</B>  Active</div>
+                    <div class="search-criteria"><B>SF Finishd Abv Grade</B>  1400 to 4000</div>
+                        </div>
+                    </div>
+                    <div class="contact-block">
+                        <div class="contact-name">Vivian Hindbaugh</div>
                         <div class="empty">No searches found</div>
                     </div>
                     <div class="contact-block">
@@ -2430,17 +2715,6 @@
                     <div class="search-criteria indent">OR Hot Tub</div>
                     <div class="search-criteria indent">OR Indoor</div>
                     <div class="search-criteria indent">OR Inground</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">eric walters</div>
-                        <div class="search-block">
-                            <div class="search-title">150k <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Mailing Cities</B>  Dundee, Milan, Ypsilanti</div>
-                    <div class="search-criteria"><B>Price</B>  150,000 or less</div>
-                    <div class="search-criteria"><B>Include Property Subtypes</B>  Condominium, Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                     </div>
                     <div class="contact-block">
@@ -2466,10 +2740,6 @@
                         </div>
                     </div>
                     <div class="contact-block">
-                        <div class="contact-name">nicole</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
                         <div class="contact-name">rana</div>
                         <div class="search-block">
                             <div class="search-title">4 bedroom <span class="search-type">(Map Search)</span></div>
@@ -2479,1103 +2749,6 @@
                     <div class="search-criteria"><B>Total Finished SqFt</B>  2000 or more</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">s.ford</div>
-                        <div class="search-block">
-                            <div class="search-title">300k <span class="search-type">(Standard Search)</span></div>
-                    <div class="search-criteria"><B>Price</B>  200,000 to 300,000</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                    <div class="search-criteria"><B>Zip Code</B>  48197</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">sherri mcneill</div>
-                        <div class="search-block">
-                            <div class="search-title">condo <span class="search-type">(Map Search)</span></div>
-                    <div class="search-criteria"><B>Map Search</B>  Polygon</div>
-                    <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
-                    <div class="search-criteria"><B>Property Type</B>  Residential</div>
-                    <div class="search-criteria"><B>Status</B>  Active</div>
-                        </div>
-                    </div>
-            </div>
-            <div id="mobile-searches" class="search-group">
-                <div class="search-block">
-                    <div class="search-title">375</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Acreage</B> 1.00 ac or more</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $375,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                </div>
-            </div>
-            <div id="mobile-contact-searches" class="search-group">
-                    <div class="contact-block">
-                        <div class="contact-name">Aaron</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Aaron Cherny</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Adam Cimaroli</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Adrienne Haywood</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Ali Alhassan</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Andrew Kean</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Angie Jensen</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Annette Leone</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Arad Gharebaghi@gmail.com</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Austin Sylver</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Barbara Gusway</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Becky Weinberg</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Bekah Burkhard</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Belinda O'Neal</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Belinda O'Neil</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Ben</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Benjamin Sporn</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Bernette & Robert Gardner</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Bill VanderHyde</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Brian & Beth Tobey</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Brian and Lisa Roberts</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Bruce DeWerth</div>
-                        <div class="search-block">
-                            <div class="search-title">100k</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Bruce Taylor</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Bryan Bentz</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Cardi Verner</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Carly Collins</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Carmen Beste</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Carolyn Estopinal</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Carrie Commissaris</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Charla Engelmeyer</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Chayson & Tess</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Cheryl Bodmer</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Chris</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Chris & Stephne Hilgendorf</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Chris Hilgendorf</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Chris and Stephne Hilgendorf</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Christie Bucklin</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Christine and Angelo</div>
-                        <div class="search-block">
-                            <div class="search-title">saline</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Cindy Lee</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Clint Roe</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Colleen Hepburn</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Colleen Hepburn</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Conrad Feller</div>
-                        <div class="search-block">
-                            <div class="search-title">ypsilanti</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $300,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">condos</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Cora LaRoy</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Cynthia Melnik</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Damsoa Diane Kagnassim</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Dan West</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Dani Grzeskowiak</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">David &  Amy</div>
-                        <div class="search-block">
-                            <div class="search-title">500k</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Bedrooms</B> 4.00 or more</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $400,000 to $515,000</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                    <div class="search-criteria"><B>Basement Type</B>  Finished</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">David DeVellis</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">David DeVellis 2018</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">David Rowe</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">DeAnna McDaniel</div>
-                        <div class="search-block">
-                            <div class="search-title">500k</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $500,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Property Subtype</B> SING</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Debbie Metler</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Deborah Gwon</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Don & Lynn Livingston</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Don Ross</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Doris & Earl Roehm</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Doug Esper and Mandy Flutur</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Elizabeth Hoffmann</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">EmmaLee Herlocher</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Eric Joyce</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Eric Keller</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Erik & Laura Wiliams</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Erik and Jennifer Parris</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Eun Jung Jang</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Fahid Ramlawi</div>
-                        <div class="search-block">
-                            <div class="search-title">375</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Acreage</B> 1.00 ac or more</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $375,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">375</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Acreage</B> 1.00 ac or more</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $375,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Felix Robertson</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Greg & Kara Hohenberger</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Hakam Salman</div>
-                        <div class="search-block">
-                            <div class="search-title">275k</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Harsha Nand</div>
-                        <div class="search-block">
-                            <div class="search-title">condos</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $280,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Property Subtype</B> CNDO</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Heather Lovings</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Imran & Sadia Quraishi</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jack and Kristi Park</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">James Hurt</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">James Lipford</div>
-                        <div class="search-block">
-                            <div class="search-title">400 ranch</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Bedrooms</B> 4.00 or more</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $400,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Property Subtype</B> Single Family</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                    <div class="search-criteria"><B>Style/Architecture</B>  Ranch</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Janelle</div>
-                        <div class="search-block">
-                            <div class="search-title">rental</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RENT</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $1,800 or less</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jarrad Mitchell</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jason Quint</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jeff & Tirienne Leonard</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jeff Pringle & Sara Grabowski</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jeff and Stephanie Klaver</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jennifer Drechnowicz</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jennifer Hunter</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jennifer Samaha</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jennifer Samaha</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jennifer Samaha</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jennifer Schroeder</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jenny & Hunter Brawn</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jerry Brookins</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jessica Jose</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jibing Yang</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jim Bojack</div>
-                        <div class="search-block">
-                            <div class="search-title">350k</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">JoJo Girvan</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jodi Reid</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Joe</div>
-                        <div class="search-block">
-                            <div class="search-title">cliffs</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Joe & Anna French</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Joe & Anna French</div>
-                        <div class="search-block">
-                            <div class="search-title">150k</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">150k</div>
-                    <div class="search-criteria"><span><B>Property Type</B> INCP</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">John</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">John Scarbrough</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Jon Reisterer</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Josh Roznowski</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Josh Roznowski</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Julia</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Julie Kreitzer</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Julie McLaughlin</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Julie Quiroz</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Karen Driggs</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Katie Chosid</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Katy Duncan</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Keith Richard</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Kellie and Charla</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Kelly Desmond</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Kelsey Platt</div>
-                        <div class="search-block">
-                            <div class="search-title">rental</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RENT</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Keri Roche</div>
-                        <div class="search-block">
-                            <div class="search-title">250k</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $250,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Property Subtype</B> SING</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Kevin & Lori Eilerman</div>
-                        <div class="search-block">
-                            <div class="search-title">clark lake</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 2 Shapes</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Krishan Agrawal</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Kurt Kiefer</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Kurt Vosburgh</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Lauren Emerson</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Linda Badri</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Linda Badri</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Lisa Nolan</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Liz Osborn</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Lori Ian</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Lynn Speed</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Marcia Pickard</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Marina</div>
-                        <div class="search-block">
-                            <div class="search-title">land</div>
-                    <div class="search-criteria"><span><B>Property Type</B> LOTL</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Mark Quint</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Melissa & Brett Walcott</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Melissa Thorson</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Michelle Hayes</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Mike Allen</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Mike Mendez</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Nicole Harmon</div>
-                        <div class="search-block">
-                            <div class="search-title">Condos</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">ypsi township</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 2 Shapes</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Nicole Levy</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Nikki Branch</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Noah & Kimberly Mass</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Pam Beaugrand</div>
-                        <div class="search-block">
-                            <div class="search-title">condos</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Patrick Young</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Patrick Young</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Paul Abrams</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Pranay</div>
-                        <div class="search-block">
-                            <div class="search-title">Condos</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $300,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Property Subtype</B> CNDO</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Ramyz Tadros</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Ravi</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Ray-Nitra</div>
-                        <div class="search-block">
-                            <div class="search-title">ann arbor</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $300,000 to $475,000</span></div>
-                    <div class="search-criteria"><span><B>Property Subtype</B> SING</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Renee Shea</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Robert Griswold</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Robert Hewelt</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Robert Jurcago</div>
-                        <div class="search-block">
-                            <div class="search-title">waterfront</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 4 Shapes</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $225,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Property Subtypes</B> CNDO</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Robert Kesto</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Robertson, Felix</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Rodney Devellis</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Rodney Devellis</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Roula Dobbins</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Ryan Sweeden- Maragaret Hudson</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Ryann Cline</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Sajeev</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Sakthish Sathasivami</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Sara</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Sara Wuellner</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Sebrina Wade</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Shannon Morgan</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Sharon</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Sharon</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Sharon</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Shaun Barrows</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Shelly Arnold</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Shu Jean</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Stephen</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Stephen Robinson</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Steven Gibson</div>
-                        <div class="search-block">
-                            <div class="search-title">under 200K</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $200,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Susan Pile</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Susan Schultz</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Susan Tello</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">TJ & Alyssa Brown</div>
-                        <div class="search-block">
-                            <div class="search-title">250 k</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Acreage</B> 0.50 ac or more</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $250,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Property Subtype</B> Single Family</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Tanner Frisch</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Tareck Ramlawi</div>
-                        <div class="search-block">
-                            <div class="search-title">land</div>
-                    <div class="search-criteria"><span><B>Property Type</B> LOTL</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Acreage</B> 10.00 ac or less</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $200,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Theresa Mark</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Thuraya Ramlawi</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Tiffany</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Tim Hillebrand</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Timothy James</div>
-                        <div class="search-block">
-                            <div class="search-title">350K</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $350,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Todd Gerlach</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Tommy & Jenn</div>
-                        <div class="search-block">
-                            <div class="search-title">map</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Acreage</B> 10 ac or more</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $275,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">map</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Tracey Bradley</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Travis Williams</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Trisha Venkatachellam</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Ty Morgan</div>
-                        <div class="search-block">
-                            <div class="search-title">300k</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
-                    <div class="search-criteria"><span><B>SF Finishd Abv Grade</B> 2000 or more</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $300,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Property Subtype</B> Single Family</span></div>
-                    <div class="search-criteria"><span><B>Statuses</B> Coming Soon, Active</span></div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">rental</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RENT</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $1,800 to $2,500</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Tyler & Kayle Allen</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Vickie Arrington</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Vinay Shah</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Vivian Hindbaugh</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">William Young</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">Zach Bouwhuis</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">anu</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">bob bartels</div>
-                        <div class="search-block">
-                            <div class="search-title">375</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $150,000 to $370,000</span></div>
-                    <div class="search-criteria"><span><B>Property Subtype</B> SING</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                    <div class="search-criteria"><B>Garage Features</B>  Attached OR Detached</div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">brian auten</div>
-                        <div class="search-block">
-                            <div class="search-title">mirage lake</div>
-                    <div class="search-criteria"><span><B>Property Types</B> RESI, LOTL</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                        <div class="search-block">
-                            <div class="search-title">kean</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Price</B> $240,000 or less</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">carly collins</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">eric walters</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">hindbaugh</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">mike brown</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">nicole</div>
-                        <div class="search-block">
-                            <div class="search-title">Condos</div>
-                    <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
-                    <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
-                    <div class="search-criteria"><span><B>Status</B> Active</span></div>
-                        </div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">rana</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">s.ford</div>
-                        <div class="empty">No searches found</div>
-                    </div>
-                    <div class="contact-block">
-                        <div class="contact-name">sherri mcneill</div>
-                        <div class="empty">No searches found</div>
                     </div>
             </div>
         </div>
