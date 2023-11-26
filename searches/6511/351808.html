@@ -15,15 +15,25 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">Just Sold <span class="search-type">(Map Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Just Sold</div>
+                        <div class="search-type">(Map Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon</div>
                     <div class="search-criteria"><B>Price</B>  100,000 or more</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Sold (12/29/2012 or after)</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Northside <span class="search-type">(Map Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Northside</div>
+                        <div class="search-type">(Map Search)</div>
+                    </div>
                     <div class="search-criteria"><span><B>Property Types</B> RESI, LOTL, INCP</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
                     <div class="search-criteria"><span><B>Statuses</B> Active, Active-Contingent, Active-LTC, Pending</span></div>
@@ -31,7 +41,10 @@
                     <div class="search-criteria"><span><B>Statuses</B> Active, Active-Contingent, Active-LTC, Pending</span></div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">UMRT <span class="search-type">(Map Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">UMRT</div>
+                        <div class="search-type">(Map Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon</div>
                     <div class="search-criteria indent">CriteriaText failed, type PropertySubType: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection._Parameter name: index_   at System.Collections.CollectionBase.System.Collections.IList.get_Item(Int32 index)_   at Rapattoni.MLS10.Business.SearchOptionValidationInfoCollection.get_Item(Int32 index)_   at Rapattoni.MLS10.Business.PropertySubTypeSearchOption.CriteriaText()_   at Rapattoni.MLS10.Business.SearchEngine.GetOptionsXml(XmlTextWriter& writer)</div>
                     <div class="search-criteria"><B>Property Type</B>  Commercial</div>
@@ -40,6 +53,10 @@
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">April Wyncott</div>
                         <div class="empty">No searches found</div>
@@ -47,7 +64,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Chris Plott</div>
                         <div class="search-block">
-                            <div class="search-title">Plott <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Plott</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  0.75 ac or more</div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon</div>
                     <div class="search-criteria"><B>Price</B>  475,000 or less</div>
@@ -59,7 +79,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Justin Ham</div>
                         <div class="search-block">
-                            <div class="search-title">Justin Ham <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Justin Ham</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon, Polygon</div>
                     <div class="search-criteria"><B>Price</B>  1,000,000 or less</div>
                     <div class="search-criteria"><B>Property Types</B>  Land, Residential</div>
@@ -68,10 +91,17 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Debbie Overweg</div>
                         <div class="search-block">
-                            <div class="search-title">Overweg <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Overweg</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Full Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 to 4.00</div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon</div>
@@ -92,7 +122,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Jeannette Stawski</div>
                         <div class="search-block">
-                            <div class="search-title">139789 <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">139789</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon</div>
@@ -106,7 +139,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Jeannette Stawski</div>
                         <div class="search-block">
-                            <div class="search-title">139814 <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">139814</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon, Polygon</div>
@@ -129,7 +165,10 @@
                     <div class="contact-block">
                         <div class="contact-name">John Park</div>
                         <div class="search-block">
-                            <div class="search-title">Park <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Park</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Full Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon</div>
@@ -153,7 +192,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Ted Erdman</div>
                         <div class="search-block">
-                            <div class="search-title">Erdman <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Erdman</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon</div>
@@ -167,7 +209,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Truly Render</div>
                         <div class="search-block">
-                            <div class="search-title">Truly Render <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Truly Render</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  350,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>

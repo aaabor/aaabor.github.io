@@ -15,28 +15,44 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">Daily Just Listed Search <span class="search-type">(Hot Sheet)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Daily Just Listed Search</div>
+                        <div class="search-type">(Hot Sheet)</div>
+                    </div>
                     <div class="search-criteria"><B>Range</B>  1  <B>Days Back from</B>    7/25/2022 10:12:36 AM   <B>Changes Included</B>  New Listings, Back on Market</div>
                     <div class="search-criteria"><B>Property Types</B>  Commercial, Income Property, Land, Rental, Residential</div>
                     <div class="search-criteria"><B>Listing Offices</B> (0660) The Charles Reinhart Company, (0661) The Charles Reinhart Company, (0662) The Charles Reinhart Company, (0663) The Charles Reinhart Company, (0664) The Charles Reinhart Company, (0665) The Charles Reinhart Company, (0667) The Charles Reinhart Company, (0669) The Charles Reinhart Company, (0671) The Charles Reinhart Company</div>
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Milan <span class="search-type">(Hot Sheet)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Milan</div>
+                        <div class="search-type">(Hot Sheet)</div>
+                    </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Range</B>  2  <B>Days Back from</B>    5/18/2022 4:38:54 PM</div>
                     <div class="search-criteria"><B>Area</B>  Milan</div>
                     <div class="search-criteria"><B>Statuses</B>  Active, Active-Contingent, Active-LTC, Pending, Expired, Sold, Withdrawn, Rented, Temp Off Market</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Saline <span class="search-type">(Hot Sheet)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Saline</div>
+                        <div class="search-type">(Hot Sheet)</div>
+                    </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Range</B>  10  <B>Days Back from</B>    6/27/2022 9:55:44 AM</div>
                     <div class="search-criteria"><B>Area</B>  Saline</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Tessmer <span class="search-type">(Map Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Tessmer</div>
+                        <div class="search-type">(Map Search)</div>
+                    </div>
                     <div class="search-criteria indent">FSO</div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>RESI - Address</B> 2300 Tessmer</span></div>
@@ -44,7 +60,10 @@
                     <div class="search-criteria"><span><B>RESI - Statuses</B> , , </span></div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">samer rd <span class="search-type">(Custom Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">samer rd</div>
+                        <div class="search-type">(Custom Search)</div>
+                    </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Acreage</B>  1 ac to 12 ac</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  <i>(Residential)</i> Single Family</div>
@@ -53,11 +72,18 @@
                     <div class="search-criteria"><B>Statuses</B>  Active, Active-Contingent, Active-LTC, Pending, Sold (6/1/2018 to 8/1/2019)</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">stony <span class="search-type">(Listing Number Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">stony</div>
+                        <div class="search-type">(Listing Number Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Listing Numbers</B>  3257807, 3261424, 3258085, 3252200, 3255461, 3257398, 3259492, 3258205</div>
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Diane Irwin</div>
                         <div class="empty">No searches found</div>
@@ -88,6 +114,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
             </div>
         </div>
         <script src="../searches.js"></script>

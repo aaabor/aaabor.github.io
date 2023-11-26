@@ -15,15 +15,25 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">Daily Market Activity <span class="search-type">(Hot Sheet)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Daily Market Activity</div>
+                        <div class="search-type">(Hot Sheet)</div>
+                    </div>
                     <div class="search-criteria"><B>From</B> 10/30/2020 04:57:57 PM<B>Changes Included</B>  Price Increases, Price Reductions, New Listings, Back on Market, Pendings, Expireds, Solds, Inactives</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  <i>(Residential)</i> Single Family, Condominium, <i>(Rental)</i> Single Family, Condominium</div>
                     <div class="search-criteria"><B>Property Types</B>  Rental, Residential</div>
                     <div class="search-criteria"><B>Area</B>   AA Briarwood & N to, AA Downtown/Burns Pa, AA E Geddes Huron Ri, AA NE & North Campus, AA NW US23 & M14, AA Scarlett & E Pitt, AA SW Liberty to Mai, AA Westside S of M14, Chelsea, Dexter Cmty, Lincoln, Manchester, Pinckney Cmty, Saline, Van Buren Twp, Whitmore Lake, YPSI Campus Area & D, YPSI E Michigan Ave, YPSI East, YPSI N of Clark/Sup, YPSI NE Huron Riv &, YPSI SE Ford Lake Ar, YPSI W Michigan to I, YPSI W to Golfside,YPSI S I-94 Whittake</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Hotsheet <span class="search-type">(Hot Sheet)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Hotsheet</div>
+                        <div class="search-type">(Hot Sheet)</div>
+                    </div>
                     <div class="search-criteria"><B>From</B> 10/30/2020 05:03:03 PM<B>Changes Included</B>  Price Increases, Price Reductions, New Listings, Back on Market, Pendings, Expireds, Solds, Inactives</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  <i>(Residential)</i> Single Family, Condominium, <i>(Rental)</i> Single Family, Condominium</div>
                     <div class="search-criteria"><B>Property Types</B>  Rental, Residential</div>
@@ -31,7 +41,10 @@
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active, Active-Contingent, Active-LTC, Pending, Expired, Sold, Withdrawn, Rented, Temp Off Market</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Lodi Twp <span class="search-type">(Standard Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Lodi Twp</div>
+                        <div class="search-type">(Standard Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Bathrooms</B>  2.00 to 3.00</div>
                     <div class="search-criteria"><B>Price</B>  200,000 to 400,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -41,17 +54,28 @@
                     <div class="search-criteria"><B>Municipality</B>  *Lodi*</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">My Market Watch Area <span class="search-type">(Standard Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">My Market Watch Area</div>
+                        <div class="search-type">(Standard Search)</div>
+                    </div>
                     <div class="search-criteria indent">CriteriaText failed, type RegionArea: System.ArgumentOutOfRangeException: Index and count must refer to a location within the string._Parameter name: count_   at System.String.Remove(Int32 startIndex, Int32 count)_   at Rapattoni.MLS10.Business.RegionAreaSearchOption.CriteriaText()_   at Rapattoni.MLS10.Business.SearchEngine.GetOptionsXml(XmlTextWriter& writer)</div>
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Bear Yuen</div>
                         <div class="empty">No searches found</div>
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Grace Angsukomutkul</div>
                         <div class="empty">No searches found</div>

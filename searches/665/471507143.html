@@ -15,8 +15,15 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">331158 <span class="search-type">(Map Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">331158</div>
+                        <div class="search-type">(Map Search)</div>
+                    </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
                     <div class="search-criteria"><span><B>Bedrooms</B> 2.00 to 2.00</span></div>
@@ -25,16 +32,26 @@
                     <div class="search-criteria"><span><B>Status</B> Active</span></div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Practice CMA <span class="search-type">(Radius Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Practice CMA</div>
+                        <div class="search-type">(Radius Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Radius Address</B>  283 Honeytree Way, Ann Arbor 48103  <B>Radius</B>  1.00 Mile</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Oleg Kaferov</div>
                         <div class="search-block">
-                            <div class="search-title">Canton radius <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Canton radius</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  89,000 to 150,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -42,7 +59,10 @@
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active, Active-Contingent, Active-LTC</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Primary residence <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Primary residence</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  50,000 to 150,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -54,7 +74,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Tom Drewniak</div>
                         <div class="search-block">
-                            <div class="search-title">331158 <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">331158</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
                     <div class="search-criteria"><span><B>Bedrooms</B> 2.00 to 2.00</span></div>
@@ -65,6 +88,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
             </div>
         </div>
         <script src="../searches.js"></script>

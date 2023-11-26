@@ -15,16 +15,30 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">721 Riverside <span class="search-type">(Address Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">721 Riverside</div>
+                        <div class="search-type">(Address Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Street Address</B>  721 to 721 riverside</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Listing <span class="search-type">(Listing Number Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Listing</div>
+                        <div class="search-type">(Listing Number Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Listing Number</B>  3266347</div>
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Adam Leal</div>
                         <div class="empty">No searches found</div>
@@ -139,6 +153,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Jeff Wilkerson</div>
                         <div class="empty">No searches found</div>

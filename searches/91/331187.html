@@ -15,12 +15,23 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">My Market Watch Area <span class="search-type">(Standard Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">My Market Watch Area</div>
+                        <div class="search-type">(Standard Search)</div>
+                    </div>
                     <div class="search-criteria indent">CriteriaText failed, type RegionArea: System.ArgumentOutOfRangeException: Index and count must refer to a location within the string._Parameter name: count_   at System.String.Remove(Int32 startIndex, Int32 count)_   at Rapattoni.MLS10.Business.RegionAreaSearchOption.CriteriaText()_   at Rapattoni.MLS10.Business.SearchEngine.GetOptionsXml(XmlTextWriter& writer)</div>
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Alex Paradis</div>
                         <div class="empty">No searches found</div>
@@ -28,7 +39,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Austin McCoy</div>
                         <div class="search-block">
-                            <div class="search-title">309940 <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">309940</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
                     <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
@@ -49,7 +63,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Brandon Oney</div>
                         <div class="search-block">
-                            <div class="search-title">Oney <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Oney</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
                     <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
@@ -73,7 +90,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Cherie McMullen</div>
                         <div class="search-block">
-                            <div class="search-title">4480 Lake Forest 1 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">4480 Lake Forest 1</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Numbers</B>  3225705, 3224484, 3228420, 3226342, 3230264, 3228968, 3227798, 3229736, R215015218, 3229093</div>
                         </div>
                     </div>
@@ -200,7 +220,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Michal Ostrowski</div>
                         <div class="search-block">
-                            <div class="search-title">Ostrowski 1 <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ostrowski 1</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Acreage</B>  .24 ac or more</div>
@@ -220,7 +243,10 @@
                     <div class="search-criteria"><B>SF Finishd Abv Grade</B>  1400 or more</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ostrowski 1 <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ostrowski 1</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Acreage</B>  .17 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  150,000 to 350,000</div>
@@ -279,6 +305,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Cherie McMullen  4480</div>
                         <div class="empty">No searches found</div>
@@ -306,7 +336,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Dana S.</div>
                         <div class="search-block">
-                            <div class="search-title">Dana 2 <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Dana 2</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  275,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -317,14 +350,20 @@
                     <div class="contact-block">
                         <div class="contact-name">David Early</div>
                         <div class="search-block">
-                            <div class="search-title">Sold Comps <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Sold Comps</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Numbers</B>  3222749, 3224190, 3220421, 3220964, R214011545, R213104500, R214016360, G3441876</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Elizabeth Himich</div>
                         <div class="search-block">
-                            <div class="search-title">Himich 1 <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Himich 1</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  135,000 or less</div>
@@ -337,7 +376,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Fong Hang</div>
                         <div class="search-block">
-                            <div class="search-title">Hang 1 <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Hang 1</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon</div>
@@ -350,7 +392,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Ian Duffey</div>
                         <div class="search-block">
-                            <div class="search-title">Ian Duffey <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ian Duffey</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Acreage</B>  .15 ac or more</div>
@@ -370,7 +415,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Jenn Penn</div>
                         <div class="search-block">
-                            <div class="search-title">Search 1 <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Search 1</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  1.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Acreage</B>  .5 ac or more</div>
@@ -385,7 +433,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Joe & Marie Dick</div>
                         <div class="search-block">
-                            <div class="search-title">Joe and Marie Dick 1 <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Joe and Marie Dick 1</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Acreage</B>  .50 ac or more</div>
@@ -407,7 +458,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Ken LaFleur</div>
                         <div class="search-block">
-                            <div class="search-title">Roundtree condos <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Roundtree condos</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Map Search</B>  Area: 0.08 sq.mi.</div>
                     <div class="search-criteria"><B>Property Types</B>  Rental, Residential</div>
                     <div class="search-criteria"><B>Statuses</B>  Active, Active-CTS, Rented (6/30/2013 or after)</div>
@@ -424,7 +478,10 @@
                     <div class="contact-block">
                         <div class="contact-name">PaoLin Chi</div>
                         <div class="search-block">
-                            <div class="search-title">Paolin Chi 1 <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Paolin Chi 1</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Contains selected listings.</B> </span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
@@ -449,7 +506,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Shelina High</div>
                         <div class="search-block">
-                            <div class="search-title">Shelina High <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Shelina High</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Map Search</B>  Area: 1.28 sq.mi., Polygon, Polygon, Polygon, Polygon</div>
@@ -459,7 +519,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Shelina High <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Shelina High</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon, Polygon, Polygon, Polygon</div>
@@ -470,7 +533,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Shelina High <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Shelina High</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
@@ -483,7 +549,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Tom Wei</div>
                         <div class="search-block">
-                            <div class="search-title">Map - expanded <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Map - expanded</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon, Polygon, Polygon</div>
                     <div class="search-criteria"><B>Price</B>  400,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  <i>(Residential)</i> Single Family</div>
@@ -491,14 +560,20 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Stadium-5th-Berkshir <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Stadium-5th-Berkshir</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon</div>
                     <div class="search-criteria"><B>Price</B>  400,000 or less</div>
                     <div class="search-criteria"><B>Property Types</B>  Income Property, Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Walking Distance 1 <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Walking Distance 1</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Map Search</B>  Polygon</div>
                     <div class="search-criteria"><B>Price</B>  400,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  <i>(Residential)</i> Single Family, <i>(Income Property)</i> 1 - 4 Units</div>

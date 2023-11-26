@@ -15,8 +15,15 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">Andy's Search <span class="search-type">(Standard Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Andy's Search</div>
+                        <div class="search-type">(Standard Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Counties</B>  Genesee, Hillsdale, Jackson, Livingston, Washtenaw</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  <i>(Residential)</i> Single Family, Farm, Condominium, <i>(Rental)</i> Single Family, Condominium, <i>(Income Property)</i> 1 - 4 Units, 5+ Units</div>
                     <div class="search-criteria"><B>Property Types</B>  Income Property, Land, Rental, Residential</div>
@@ -24,23 +31,40 @@
                     <div class="search-criteria"><B>Statuses</B>  Active, Active-Contingent, Pending, Expired, Sold, Withdrawn, Rented, Temp Off Market</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Expireds <span class="search-type">(Hot Sheet)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Expireds</div>
+                        <div class="search-type">(Hot Sheet)</div>
+                    </div>
                     <div class="search-criteria"><B>Range</B>  1  <B>Days Back from</B>    11/16/2023 6:21:27 AM   <B>Changes Included</B>  New Listings, Back on Market, Expireds, Inactives</div>
                     <div class="search-criteria"><B>Price</B>  100,000 or more</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">My Market Watch Area <span class="search-type">(Standard Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">My Market Watch Area</div>
+                        <div class="search-type">(Standard Search)</div>
+                    </div>
                     <div class="search-criteria indent">CriteriaText failed, type RegionArea: System.ArgumentOutOfRangeException: Index and count must refer to a location within the string._Parameter name: count_   at System.String.Remove(Int32 startIndex, Int32 count)_   at Rapattoni.MLS10.Business.RegionAreaSearchOption.CriteriaText()_   at Rapattoni.MLS10.Business.SearchEngine.GetOptionsXml(XmlTextWriter& writer)</div>
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Gregg Hamm</div>
                         <div class="search-block">
-                            <div class="search-title">Gregg Hamm <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Gregg Hamm</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 to 3.00</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 to 4.00</div>
                     <div class="search-criteria"><B>Counties</B>  Genesee, Hillsdale, Jackson, Livingston, Washtenaw</div>
@@ -54,7 +78,10 @@
                     <div class="contact-block">
                         <div class="contact-name">K. C. Prasad</div>
                         <div class="search-block">
-                            <div class="search-title">K. C. Prasad <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">K. C. Prasad</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 to 3.00</div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 to 3.00</div>
                     <div class="search-criteria"><B>City</B>  Ann Arbor</div>
@@ -69,7 +96,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Kristen Brawn</div>
                         <div class="search-block">
-                            <div class="search-title">Kristen Brawn <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Kristen Brawn</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  1 ac to 3 ac</div>
                     <div class="search-criteria"><B>Price</B>  10,000 to 50,000</div>
                     <div class="search-criteria"><B>Property Type</B>  Lots & Land</div>
@@ -80,7 +110,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Mac Fraker</div>
                         <div class="search-block">
-                            <div class="search-title">Mac Fraker <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Mac Fraker</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  1.00 to 2.00</div>
                     <div class="search-criteria"><B>Bedrooms</B>  1.00 to 2.00</div>
                     <div class="search-criteria"><B>Price</B>  50,000 to 80,000</div>
@@ -101,7 +134,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Sandy Pomponio</div>
                         <div class="search-block">
-                            <div class="search-title">Sandy Pomponio <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Sandy Pomponio</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  10 ac to 30 ac</div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 300,000</div>
                     <div class="search-criteria"><B>Property Type</B>  Lots & Land</div>

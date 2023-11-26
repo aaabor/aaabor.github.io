@@ -15,17 +15,31 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
-                <div class="search-block">
-                    <div class="search-title">New Home <span class="search-type">(Map Search)</span></div>
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">seller financing search <span class="search-type">(Custom Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">New Home</div>
+                        <div class="search-type">(Map Search)</div>
+                    </div>
+                </div>
+                <div class="search-block">
+                    <div class="title-block">
+                        <div class="search-title">seller financing search</div>
+                        <div class="search-type">(Custom Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Agent Only Comments / Public Remarks</B>  seller financing (Both)</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Aleeda Lipocky</div>
                         <div class="empty">No searches found</div>
@@ -37,7 +51,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Julie Linovitz</div>
                         <div class="search-block">
-                            <div class="search-title">1st House! <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">1st House!</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
                     <div class="search-criteria"><span><B>Bedrooms</B> 2.00 or more</span></div>
@@ -49,7 +66,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Kevin Lipocky</div>
                         <div class="search-block">
-                            <div class="search-title">Dream Home <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Dream Home</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 3 Shapes</span></div>
                     <div class="search-criteria"><span><B>Bedrooms</B> 4.00 or more</span></div>
@@ -63,7 +83,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Ryan Nyitray</div>
                         <div class="search-block">
-                            <div class="search-title">New Home <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">New Home</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 2 Shapes</span></div>
                     <div class="search-criteria"><span><B>Bedrooms</B> 2.00 or more</span></div>
@@ -74,6 +97,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
             </div>
         </div>
         <script src="../searches.js"></script>

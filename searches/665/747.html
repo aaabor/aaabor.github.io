@@ -15,14 +15,24 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">Bob and Linda <span class="search-type">(Map Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Bob and Linda</div>
+                        <div class="search-type">(Map Search)</div>
+                    </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
                     <div class="search-criteria"><span><B>Status</B> Active</span></div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Condos for Jane <span class="search-type">(Standard Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Condos for Jane</div>
+                        <div class="search-type">(Standard Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Price</B>  115,000 to 200,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -30,7 +40,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Linda & Bob <span class="search-type">(Map Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Linda & Bob</div>
+                        <div class="search-type">(Map Search)</div>
+                    </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
                     <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
@@ -43,7 +56,10 @@
                     <div class="search-criteria"><B>Style/Architecture</B>  Ranch OR Raised Ranch</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Randolph <span class="search-type">(Quick Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Randolph</div>
+                        <div class="search-type">(Quick Search)</div>
+                    </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Cities</B>  Ann Arbor, Northfield, Salem, Superior</div>
                     <div class="search-criteria"><B>Price</B>  149,000 to 375,000</div>
@@ -54,17 +70,27 @@
                     <div class="search-criteria"><B>SF Finishd Abv Grade</B>  1500.000 to 7000.000</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Rick's daily update <span class="search-type">(Hot Sheet)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Rick's daily update</div>
+                        <div class="search-type">(Hot Sheet)</div>
+                    </div>
                     <div class="search-criteria"><B>Price</B>  1,000 to 5,000,000</div>
                     <div class="search-criteria indent">CriteriaText failed, type RegionArea: System.ArgumentOutOfRangeException: Index and count must refer to a location within the string._Parameter name: count_   at System.String.Remove(Int32 startIndex, Int32 count)_   at Rapattoni.MLS10.Business.RegionAreaSearchOption.CriteriaText()_   at Rapattoni.MLS10.Business.SearchEngine.GetOptionsXml(XmlTextWriter& writer)</div>
                     <div class="search-criteria"><B>Status</B></div>
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Adam Rawski</div>
                         <div class="search-block">
-                            <div class="search-title">Adam & Anne <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Adam & Anne</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  245,000 to 380,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -77,7 +103,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Bob & Linda Horning</div>
                         <div class="search-block">
-                            <div class="search-title">The Hornings Retreat Search <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">The Hornings Retreat Search</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Livingston</div>
                     <div class="search-criteria"><B>Acreage</B>  5.00 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  600,000 to 1,500,000</div>
@@ -90,7 +119,10 @@
                     <div class="search-criteria"><B>Municipality</B>  *Green Oak,Hamburg*</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Washtenaw County <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Washtenaw County</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Acreage</B>  5.00 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  600,000 to 1,500,000</div>
@@ -111,7 +143,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Doug & Karen Smith</div>
                         <div class="search-block">
-                            <div class="search-title">Ranches <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ranches</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  125,000 to 205,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -120,7 +155,10 @@
                     <div class="search-criteria"><B>Style</B>  Ranch</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Vacant <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Vacant</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  1 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  45,000 to 90,000</div>
                     <div class="search-criteria"><B>Property Type</B>  Land</div>
@@ -131,14 +169,20 @@
                     <div class="contact-block">
                         <div class="contact-name">Doug & Marcia Swiss</div>
                         <div class="search-block">
-                            <div class="search-title">Rosewood <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Rosewood</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Radius Address</B>  3209 primrose, Ypsilanti, MI 48197  <B>Radius</B>  0.25 Miles</div>
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Swiss Georgetown <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Swiss Georgetown</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Radius Address</B>  2624 Fenwick, Ann Arbor, MI 48104  <B>Radius</B>  0.25 Miles</div>
@@ -148,7 +192,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Emily Hall</div>
                         <div class="search-block">
-                            <div class="search-title">Emily SJB <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Emily SJB</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  1,200 to 2,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  <i>(Rental)</i> Single Family, Condominium</div>
                     <div class="search-criteria"><B>Property Types</B>  Rental, Residential</div>
@@ -159,7 +206,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Francia Valero</div>
                         <div class="search-block">
-                            <div class="search-title">Francia <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Francia</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  125,000 to 185,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
@@ -171,7 +221,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Frank Parkinson</div>
                         <div class="search-block">
-                            <div class="search-title">Frank <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Frank</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  500,000 or more</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -182,7 +235,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Jake Meyer</div>
                         <div class="search-block">
-                            <div class="search-title">Meyer <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Meyer</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  295,000 to 500,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -197,7 +253,10 @@
                     <div class="contact-block">
                         <div class="contact-name">James Mangan</div>
                         <div class="search-block">
-                            <div class="search-title">Rickie <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Rickie</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Radius Address</B>  6128 Boyne Dr, Ypsilanti 48197  <B>Radius</B>  0.25 Miles</div>
@@ -207,7 +266,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Karen Andruszewski</div>
                         <div class="search-block">
-                            <div class="search-title">Karen & Mary do Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Karen & Mary do Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  275,000 to 425,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -217,7 +279,10 @@
                     <div class="search-criteria"><B>Style/Architecture</B>  Ranch</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Karen and Mary <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Karen and Mary</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  275,000 to 425,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -232,7 +297,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Ken & Ann Marie Rusiniak</div>
                         <div class="search-block">
-                            <div class="search-title">Ken <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ken</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  195,000 to 450,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condominium, Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -246,7 +314,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Neil Atzinger</div>
                         <div class="search-block">
-                            <div class="search-title">Atzinger Land <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Atzinger Land</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Acreage</B>  2.00 ac to 25.00 ac</div>
                     <div class="search-criteria"><B>Price</B>  95,000 to 500,000</div>
@@ -256,7 +327,10 @@
                     <div class="search-criteria"><B>Municipality</B>  *Salem,Ann Arbor,Superior*</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Atzinger/Revised <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Atzinger/Revised</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  2.00 ac to 25.00 ac</div>
                     <div class="search-criteria"><B>Price</B>  95,000 to 500,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Farm, Single Family</div>
@@ -269,7 +343,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Nick Clark</div>
                         <div class="search-block">
-                            <div class="search-title">Land for Nick <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Land for Nick</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  45,000 to 100,000</div>
                     <div class="search-criteria"><B>Property Type</B>  Land</div>
                     <div class="search-criteria"><B>Radius Address</B>  1020 E Michigan Ave, Saline, MI 48176  <B>Radius</B>  20.00 Miles</div>
@@ -283,7 +360,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Ollie & Shak</div>
                         <div class="search-block">
-                            <div class="search-title">Shak <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Shak</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  0.50 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  275,000 to 425,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -297,7 +377,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Rebecca Baiocco</div>
                         <div class="search-block">
-                            <div class="search-title">Becky Revised <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Becky Revised</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Counties</B>  Washtenaw, Wayne</div>
                     <div class="search-criteria"><B>Price</B>  150,000 to 250,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -306,7 +389,10 @@
                     <div class="search-criteria"><B>Municipality</B>  *Saline,York,Superior,Allen Park,Huron,Augusta,Sumpter*</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Becky does  condos <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Becky does  condos</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  175,000 to 250,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -317,7 +403,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Rick Mangan</div>
                         <div class="search-block">
-                            <div class="search-title">area 85 <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">area 85</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  50,000 to 1,000,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -328,7 +417,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Rickey</div>
                         <div class="search-block">
-                            <div class="search-title">Rickey for Joe <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Rickey for Joe</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Acreage</B>  1 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  360,000 to 400,000</div>
@@ -341,7 +433,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Rickey 2</div>
                         <div class="search-block">
-                            <div class="search-title">Rickey 2 <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Rickey 2</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
                     <div class="search-criteria"><span><B>Status</B> Active</span></div>
@@ -350,7 +445,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Rico Mangano</div>
                         <div class="search-block">
-                            <div class="search-title">Area 85 <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Area 85</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 2,000,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condominium, Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -358,14 +456,20 @@
                     <div class="search-criteria"><B>Statuses</B>  Active (6/7/2016 or after) , Sold (6/7/2016 or after)</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Bill homes <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Bill homes</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  1.00 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  395,000 to 750,000</div>
                     <div class="search-criteria"><B>Radius Address</B>  1300 Prospect, Ypsilanti, MI 48198  <B>Radius</B>  5.00 Miles</div>
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Rico does Ypsi <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Rico does Ypsi</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  125,000 to 400,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -376,7 +480,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Rob Horning</div>
                         <div class="search-block">
-                            <div class="search-title">Horning <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Horning</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  5.00 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  400,000 to 750,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -389,7 +496,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Ron Schulz</div>
                         <div class="search-block">
-                            <div class="search-title">Ron Schulz <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ron Schulz</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  115,000 to 230,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condominium, Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -400,7 +510,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Ruth & Martin Beckman</div>
                         <div class="search-block">
-                            <div class="search-title">Country Living <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Country Living</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  10.00 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  150,000 to 350,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -415,7 +528,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Ruth & Martin Beckman</div>
                         <div class="search-block">
-                            <div class="search-title">Country Living <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Country Living</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  9.00 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  150,000 to 350,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -430,7 +546,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Shurtliff, Emily</div>
                         <div class="search-block">
-                            <div class="search-title">Emily <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Emily</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  60,000 to 150,000</div>
                     <div class="search-criteria"><B>Property Type</B>  Land</div>
                     <div class="search-criteria"><B>Radius Address</B>  5671 Whitmore Lake Rd, Ann Arbor, MI 48105  <B>Radius</B>  3.00 Miles</div>
@@ -440,7 +559,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Steve Thomshefski</div>
                         <div class="search-block">
-                            <div class="search-title">St. Joseph <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">St. Joseph</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  350,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -448,7 +570,10 @@
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Steve & Lucia <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Steve & Lucia</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  295,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -459,7 +584,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Susan Gardner</div>
                         <div class="search-block">
-                            <div class="search-title">Susan G. <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Susan G.</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  165,000 to 300,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condominium, Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -470,7 +598,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Tim & Naomi Wagner</div>
                         <div class="search-block">
-                            <div class="search-title">North of M-14 <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">North of M-14</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Full Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
@@ -483,7 +614,10 @@
                     <div class="search-criteria"><B>SF Finishd Abv Grade</B>  2000.000 or more</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Spensive Stuff <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Spensive Stuff</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Acreage</B>  7 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  425,000 to 1,000,000</div>
@@ -493,7 +627,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Vacant <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Vacant</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Price</B>  80,000 to 600,000</div>
                     <div class="search-criteria"><B>Property Type</B>  Land</div>
@@ -503,6 +640,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Alan & Veronica Cherney</div>
                         <div class="empty">No searches found</div>
@@ -538,7 +679,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Angie Abraham</div>
                         <div class="search-block">
-                            <div class="search-title">Angie's place <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Angie's place</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B></B>  wildwood</div>
                     <div class="search-criteria"><B>Price</B>  185,000 to 300,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
@@ -551,7 +695,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Barb Sierra</div>
                         <div class="search-block">
-                            <div class="search-title">Lakeview Estates <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Lakeview Estates</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  250,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -602,7 +749,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Carmencita Princen</div>
                         <div class="search-block">
-                            <div class="search-title">Carmencita <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Carmencita</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  80,000 to 180,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -613,7 +763,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Carol Kremer</div>
                         <div class="search-block">
-                            <div class="search-title">Carol K. <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Carol K.</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  155,000 to 300,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condominium, Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -632,7 +785,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Cheryl Anderson</div>
                         <div class="search-block">
-                            <div class="search-title">Cheryl S. <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Cheryl S.</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Full Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Price</B>  189,000 to 265,000</div>
@@ -664,7 +820,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Damian Farrell</div>
                         <div class="search-block">
-                            <div class="search-title">Damian <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Damian</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  2 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  75,000 or more</div>
                     <div class="search-criteria"><B>Property Type</B>  Lots & Land</div>
@@ -703,7 +862,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Daniel & Lindsey Mitzel</div>
                         <div class="search-block">
-                            <div class="search-title">Dexter <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Dexter</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  295,000 to 600,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -711,7 +873,10 @@
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active, Active-Contingent, Active-LTC, Pending, Expired, Sold (10/23/2020 or after) , Withdrawn, Temp Off Market</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Dexter/Mitzel <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Dexter/Mitzel</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  295,000 to 600,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -734,7 +899,10 @@
                     <div class="contact-block">
                         <div class="contact-name">David & Sheryl Krause</div>
                         <div class="search-block">
-                            <div class="search-title">Brecon Village <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Brecon Village</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B></B>  Brecon</div>
                     <div class="search-criteria"><B>Price</B>  169,000 to 250,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
@@ -750,7 +918,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Dawn Martinez</div>
                         <div class="search-block">
-                            <div class="search-title">Dawn <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Dawn</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Price</B>  159,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -786,7 +957,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Diane Wilkes</div>
                         <div class="search-block">
-                            <div class="search-title">Diane377 <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Diane377</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Price</B>  60,000 to 115,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
@@ -806,7 +980,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Dominic Bruno</div>
                         <div class="search-block">
-                            <div class="search-title">Bruno2 <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Bruno2</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Map Search</B>  Radius: 8.55 mi.</div>
                     <div class="search-criteria"><B>Price</B>  105,000 to 150,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -839,7 +1016,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Ed Gannaway</div>
                         <div class="search-block">
-                            <div class="search-title">Brecon for Ed <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Brecon for Ed</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B></B>  Brecon</div>
                     <div class="search-criteria"><B>Price</B>  250,000 or less</div>
@@ -860,7 +1040,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Erik Majcher</div>
                         <div class="search-block">
-                            <div class="search-title">Erik & Alicia <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Erik & Alicia</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>City</B>  Ann Arbor</div>
                     <div class="search-criteria"><B>Price</B>  10,000 to 250,000</div>
@@ -873,7 +1056,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Eveline Bocaniciu</div>
                         <div class="search-block">
-                            <div class="search-title">Eveline <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Eveline</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Price</B>  48,000 to 70,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
@@ -889,7 +1075,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Fe</div>
                         <div class="search-block">
-                            <div class="search-title">Fe & Adan <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Fe & Adan</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Price</B>  40,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  <i>(Residential)</i> Single Family, <i>(Income Property)</i> 1 - 4 Units</div>
@@ -920,7 +1109,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Henry Root</div>
                         <div class="search-block">
-                            <div class="search-title">Colonial Square <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Colonial Square</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria indent">Listing Date   (8/12/2012 or after)</div>
                     <div class="search-criteria"><B></B>  colonial square</div>
@@ -933,7 +1125,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Hisashi Kawachi</div>
                         <div class="search-block">
-                            <div class="search-title">Hisashi <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Hisashi</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  1,400 to 2,600</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condominium, Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Rental</div>
@@ -966,7 +1161,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Jenny Geyer</div>
                         <div class="search-block">
-                            <div class="search-title">Jenny & Jonny <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Jenny & Jonny</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Full Bathrooms</B>  1.00 to 4.00</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
@@ -982,7 +1180,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Jeremy & Sarah Hanke</div>
                         <div class="search-block">
-                            <div class="search-title">Hanke <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Hanke</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  120,000 to 180,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1025,7 +1226,10 @@
                     <div class="contact-block">
                         <div class="contact-name">John & Nancy Rolph</div>
                         <div class="search-block">
-                            <div class="search-title">John & Nancy <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">John & Nancy</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 250,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condominium, Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1060,7 +1264,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Karen Valvo</div>
                         <div class="search-block">
-                            <div class="search-title">Karen <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Karen</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Acreage</B>  1 ac or less</div>
@@ -1077,7 +1284,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Kathy Schamberger</div>
                         <div class="search-block">
-                            <div class="search-title">Strader <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Strader</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Price</B>  175,000 to 275,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
@@ -1133,7 +1343,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Lance Holland</div>
                         <div class="search-block">
-                            <div class="search-title">Lance <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Lance</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  35,000 to 150,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1144,7 +1357,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Larry & Pat Strauch</div>
                         <div class="search-block">
-                            <div class="search-title">Strauch <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Strauch</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  185,000 to 315,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1167,7 +1383,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Leon Eiseman</div>
                         <div class="search-block">
-                            <div class="search-title">Eisemann <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Eisemann</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  175,000 to 325,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1202,7 +1421,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Marta Mohacsi</div>
                         <div class="search-block">
-                            <div class="search-title">Marta <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Marta</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Full Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Price</B>  125,000 to 240,000</div>
@@ -1227,7 +1449,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Michelle Collingridge</div>
                         <div class="search-block">
-                            <div class="search-title">Vacant Land for Michelle <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Vacant Land for Michelle</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  2 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  200,000 or less</div>
                     <div class="search-criteria"><B>Property Type</B>  Land</div>
@@ -1246,7 +1471,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Mike & Emily Sauter</div>
                         <div class="search-block">
-                            <div class="search-title">Mike & Emma <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Mike & Emma</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Full Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  225,000 to 365,000</div>
@@ -1256,7 +1484,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Vacant land <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Vacant land</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  65,000 to 200,000</div>
                     <div class="search-criteria"><B>Property Type</B>  Land</div>
                     <div class="search-criteria"><B>Radius Address</B>  2665 E Five Mile, South Lyon, MI 48178  <B>Radius</B>  10.00 Miles</div>
@@ -1274,7 +1505,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Miriam & Micheal Dineen</div>
                         <div class="search-block">
-                            <div class="search-title">Maddie does Saline <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Maddie does Saline</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  225,000 to 340,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1282,7 +1516,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Maddie does Ypsilant <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Maddie does Ypsilant</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  215,000 to 300,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1294,7 +1531,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Monica Prince</div>
                         <div class="search-block">
-                            <div class="search-title">Monica <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Monica</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  95,000 to 180,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1305,7 +1545,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Monica Williams</div>
                         <div class="search-block">
-                            <div class="search-title">monica <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">monica</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  165,000 to 285,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1340,7 +1583,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Pamela Gerber</div>
                         <div class="search-block">
-                            <div class="search-title">Pamela <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Pamela</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  75,000 to 140,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1383,7 +1629,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Ricky & Cheryl Keller</div>
                         <div class="search-block">
-                            <div class="search-title">Cheryl <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Cheryl</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  1 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  175,000 to 300,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -1424,7 +1673,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Sandra McDevitt</div>
                         <div class="search-block">
-                            <div class="search-title">Foleys <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Foleys</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Radius Address</B>  7 Southwick, Ann Arbor 48105  <B>Radius</B>  0.25 Miles</div>
@@ -1446,7 +1698,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Shelly Carmona</div>
                         <div class="search-block">
-                            <div class="search-title">shelly <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">shelly</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>Price</B>  100,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
@@ -1474,7 +1729,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Steve Thomashefski</div>
                         <div class="search-block">
-                            <div class="search-title">Lucia <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Lucia</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  175,000 to 330,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1482,7 +1740,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Vacant sites <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Vacant sites</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  45,000 to 100,000</div>
                     <div class="search-criteria"><B>Property Type</B>  Land</div>
                     <div class="search-criteria"><B>Radius Address</B>  213 N Adams, Ypsilanti, MI 48197  <B>Radius</B>  10.00 Miles</div>
@@ -1492,7 +1753,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Steve Zekany</div>
                         <div class="search-block">
-                            <div class="search-title">Steve <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Steve</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  185,000 to 250,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1503,7 +1767,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Sue Evanoski</div>
                         <div class="search-block">
-                            <div class="search-title">Arizona Sue <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Arizona Sue</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  295,000 to 410,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>

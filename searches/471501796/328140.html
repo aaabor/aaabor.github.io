@@ -15,8 +15,15 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">A2 Houses & condos <span class="search-type">(Quick Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">A2 Houses & condos</div>
+                        <div class="search-type">(Quick Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Price</B>  300,000 to 600,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  <i>(Residential)</i> Single Family, Condominium</div>
                     <div class="search-criteria"><B>Property Types</B>  Land, Residential</div>
@@ -24,7 +31,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Kelly & Todd <span class="search-type">(Map Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Kelly & Todd</div>
+                        <div class="search-type">(Map Search)</div>
+                    </div>
                     <div class="search-criteria"><span><B>Property Types</B> RESI, LOTL</span></div>
                     <div class="search-criteria"><span><B>Contains selected listings.</B> </span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 2 Shapes</span></div>
@@ -37,6 +47,10 @@
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Adam McCloe</div>
                         <div class="empty">No searches found</div>
@@ -296,7 +310,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Kelly Bennett</div>
                         <div class="search-block">
-                            <div class="search-title">342927 <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">342927</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><span><B>Property Types</B> RESI, LOTL</span></div>
                     <div class="search-criteria"><span><B>Contains selected listings.</B> </span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 2 Shapes</span></div>
@@ -566,6 +583,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
             </div>
         </div>
         <script src="../searches.js"></script>

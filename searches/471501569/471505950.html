@@ -15,15 +15,25 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">AA Income Prop <span class="search-type">(Hot Sheet)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">AA Income Prop</div>
+                        <div class="search-type">(Hot Sheet)</div>
+                    </div>
                     <div class="search-criteria"><B>From</B> 11/15/2023 12:05:02 PM</div>
                     <div class="search-criteria"><B>Property Type</B>  Income Property</div>
                     <div class="search-criteria"><B>Area</B>   AA Downtown/Burns Pa, AA E Geddes Huron Ri, AA NE & North Campus, AA NW US23 & M14, AA Scarlett & E Pitt, AA SW Liberty to Mai, AA Westside S of M14,AA Briarwood & N to</div>
                     <div class="search-criteria"><B>Statuses</B>  Active, Active-Contingent</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Income & Land - AA <span class="search-type">(Quick Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Income & Land - AA</div>
+                        <div class="search-type">(Quick Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  <i>(Income Property)</i> 1 - 4 Units, 5+ Units</div>
                     <div class="search-criteria"><B>Property Types</B>  Income Property, Land</div>
                     <div class="search-criteria"><B>Area</B>  AA Downtown/Burns Pa</div>
@@ -32,10 +42,17 @@
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Pete - New Listing Alert</div>
                         <div class="search-block">
-                            <div class="search-title">Income & Land AA <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Income & Land AA</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  <i>(Income Property)</i> 1 - 4 Units, 5+ Units</div>
                     <div class="search-criteria"><B>Property Types</B>  Income Property, Land</div>
                     <div class="search-criteria"><B>Area</B>   AA Downtown/Burns Pa, AA E Geddes Huron Ri, AA NE & North Campus, AA NW US23 & M14, AA Scarlett & E Pitt, AA SW Liberty to Mai, AA Westside S of M14,AA Briarwood & N to</div>
@@ -44,6 +61,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
             </div>
         </div>
         <script src="../searches.js"></script>

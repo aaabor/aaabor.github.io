@@ -18,10 +18,17 @@
                    <div class="empty">No Searches Found</div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">felicia</div>
                         <div class="search-block">
-                            <div class="search-title">condo <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">condo</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing City</B>  Ann Arbor</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -30,6 +37,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
             </div>
         </div>
         <script src="../searches.js"></script>

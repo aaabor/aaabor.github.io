@@ -15,15 +15,25 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">Ann Arbor Homes For Dem <span class="search-type">(Standard Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Ann Arbor Homes For Dem</div>
+                        <div class="search-type">(Standard Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Bedrooms</B>  4.00 to 5.00</div>
                     <div class="search-criteria"><B>Price</B>  400,000 to 500,000</div>
                     <div class="search-criteria indent">CriteriaText failed, type RegionArea: System.ArgumentOutOfRangeException: Index and count must refer to a location within the string._Parameter name: count_   at System.String.Remove(Int32 startIndex, Int32 count)_   at Rapattoni.MLS10.Business.RegionAreaSearchOption.CriteriaText()_   at Rapattoni.MLS10.Business.SearchEngine.GetOptionsXml(XmlTextWriter& writer)</div>
                     <div class="search-criteria"><B>Status</B></div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Diana Search <span class="search-type">(Custom Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Diana Search</div>
+                        <div class="search-type">(Custom Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  1.00 to 2.00</div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 to 3.00</div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
@@ -35,10 +45,17 @@
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Angel Connor</div>
                         <div class="search-block">
-                            <div class="search-title">Properties for Angel <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Properties for Angel</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bathrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Mailing City</B>  Jackson</div>
@@ -52,7 +69,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Den Le</div>
                         <div class="search-block">
-                            <div class="search-title">Ann%20Arbor%20Homes%20for%20Den <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann%20Arbor%20Homes%20for%20Den</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 to 5.00</div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
@@ -67,7 +87,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Diana Carey</div>
                         <div class="search-block">
-                            <div class="search-title">Diana Search <span class="search-type">(Custom Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Diana Search</div>
+                                <div class="search-type">(Custom Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bathrooms</B>  1.00 to 2.00</div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 to 3.00</div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
@@ -84,10 +107,17 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Sunil & Radha Kamdar</div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor Area Condo <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor Area Condo</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
                     <div class="search-criteria"><span><B>Bedrooms</B> 0.00 to 3.00</span></div>
@@ -97,7 +127,10 @@
                     <div class="search-criteria"><span><B>Status</B> Active</span></div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor Area Condos <span class="search-type">(Custom Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor Area Condos</div>
+                                <div class="search-type">(Custom Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  .00 to 2.00   <B>Full Bathrooms</B>  .00 to .00</div>
                     <div class="search-criteria"><B>Bedrooms</B>  0.00 to 3.00</div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>

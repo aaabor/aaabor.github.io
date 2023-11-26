@@ -15,14 +15,25 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">Saline/Milan/Country <span class="search-type">(Hot Sheet)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Saline/Milan/Country</div>
+                        <div class="search-type">(Hot Sheet)</div>
+                    </div>
                     <div class="search-criteria"><B>From</B> 7/5/2023 08:32:49 AM<B>Changes Included</B>  Price Increases, Price Reductions, New Listings, Back on Market, Pendings, Expireds, Solds</div>
                     <div class="search-criteria"><B>Property Types</B>  Land, Residential</div>
                     <div class="search-criteria"><B>Area</B>   Clinton Cmty, Milan, Napoleon, Saline,Manchester</div>
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Agent Bakerden103</div>
                         <div class="empty">No searches found</div>
@@ -561,6 +572,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
             </div>
         </div>
         <script src="../searches.js"></script>

@@ -18,10 +18,17 @@
                    <div class="empty">No Searches Found</div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Gayle Sturt</div>
                         <div class="search-block">
-                            <div class="search-title">021820 <span class="search-type">(Custom Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">021820</div>
+                                <div class="search-type">(Custom Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Counties</B>  Livingston, Washtenaw, Wayne</div>
                     <div class="search-criteria"><B>Acreage</B>  4.00 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  500,000 or less</div>
@@ -31,6 +38,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
             </div>
         </div>
         <script src="../searches.js"></script>

@@ -15,8 +15,15 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">AA Condo $1k-$1,600 <span class="search-type">(Standard Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">AA Condo $1k-$1,600</div>
+                        <div class="search-type">(Standard Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Bathrooms</B>  1.00 to 4.00   <B>Full Bathrooms</B>  .00 to 4.00   <B>1/2 Bathrooms</B>  .00 to 3.00</div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 to 4.00</div>
                     <div class="search-criteria"><B>Mailing City</B>  Ann Arbor</div>
@@ -26,7 +33,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Condo $1.6k - $2.5k <span class="search-type">(Standard Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Condo $1.6k - $2.5k</div>
+                        <div class="search-type">(Standard Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Mailing City</B>  Ann Arbor</div>
                     <div class="search-criteria"><B>Price</B>  1,600 to 2,500</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
@@ -35,10 +45,17 @@
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Mike Zanto</div>
                         <div class="search-block">
-                            <div class="search-title">SFH <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">SFH</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><span><B>Property Types</B> RESI, INCP</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 2 Shapes</span></div>
                     <div class="search-criteria"><span><B>Price</B> $500,000 or less</span></div>
@@ -53,7 +70,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Owner Occupied</div>
                         <div class="search-block">
-                            <div class="search-title">Owner Occupied <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Owner Occupied</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing City</B>  Ann Arbor</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  1 - 4 Units</div>
                     <div class="search-criteria"><B>Property Type</B>  Income Property</div>
@@ -62,6 +82,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
             </div>
         </div>
         <script src="../searches.js"></script>

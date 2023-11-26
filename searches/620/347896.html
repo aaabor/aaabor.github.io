@@ -15,8 +15,15 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">Ann Arbor Homes <span class="search-type">(Standard Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Ann Arbor Homes</div>
+                        <div class="search-type">(Standard Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 180,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -25,26 +32,42 @@
                     <div class="search-criteria"><B>Garage</B>  excluded Carport</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Days Back Hotsheet <span class="search-type">(Hot Sheet)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Days Back Hotsheet</div>
+                        <div class="search-type">(Hot Sheet)</div>
+                    </div>
                     <div class="search-criteria"><B>Range</B>  3  <B>Days Back from</B>    6/1/2021 5:35:52 PM   <B>Changes Included</B>  Price Reductions, New Listings, Back on Market</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Area</B>   AA Downtown/Burns Pa, AA E Geddes Huron Ri, AA NE & North Campus, AA NW US23 & M14, AA Scarlett & E Pitt, AA SW Liberty to Mai, AA Westside S of M14,AA Briarwood & N to</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">My Market Watch Area <span class="search-type">(Standard Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">My Market Watch Area</div>
+                        <div class="search-type">(Standard Search)</div>
+                    </div>
                     <div class="search-criteria indent">CriteriaText failed, type RegionArea: System.ArgumentOutOfRangeException: Index and count must refer to a location within the string._Parameter name: count_   at System.String.Remove(Int32 startIndex, Int32 count)_   at Rapattoni.MLS10.Business.RegionAreaSearchOption.CriteriaText()_   at Rapattoni.MLS10.Business.SearchEngine.GetOptionsXml(XmlTextWriter& writer)</div>
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Allison Merlos</div>
                         <div class="search-block">
-                            <div class="search-title">Golden Lane Condo <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Golden Lane Condo</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R2210050243</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Single Family Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Single Family Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Counties</B>  Lenawee, Livingston, Washtenaw</div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Ann Arbor, Clinton, Dexter, Milan, Saline, Whitmore Lake</div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 210,000</div>
@@ -53,7 +76,10 @@
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ypsilanti Single Family <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ypsilanti Single Family</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Belleville, Van Buren, Ypsilanti</div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 210,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -68,7 +94,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Andy Bomis</div>
                         <div class="search-block">
-                            <div class="search-title">715 Wesley St <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">715 Wesley St</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3274300</div>
                         </div>
                     </div>
@@ -79,14 +108,20 @@
                     <div class="contact-block">
                         <div class="contact-name">Barbara Sefton</div>
                         <div class="search-block">
-                            <div class="search-title">Fieldcrest Rental <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Fieldcrest Rental</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3253795, 3253803</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Candice Price</div>
                         <div class="search-block">
-                            <div class="search-title">Rentals <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Rentals</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Ann Arbor, Pittsfield, Saline, Superior Township, Ypsilanti</div>
                     <div class="search-criteria"><B>Price</B>  1,400 to 2,300</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condominium, Single Family</div>
@@ -98,7 +133,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Chelsie La Nore</div>
                         <div class="search-block">
-                            <div class="search-title">AA Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">AA Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing City</B>  Ann Arbor</div>
                     <div class="search-criteria"><B>Price</B>  185,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -106,7 +144,10 @@
                     <div class="search-criteria"><B>Status</B>  Active (4/1/2017 or after)</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor Condos <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor Condos</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing City</B>  Ann Arbor</div>
                     <div class="search-criteria"><B>Price</B>  180,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
@@ -115,7 +156,10 @@
                     <div class="search-criteria"><B>Terms</B>  FHA</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ypsi & Twp <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ypsi & Twp</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 185,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -126,7 +170,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Chris Trowbridge, Erika Cowley</div>
                         <div class="search-block">
-                            <div class="search-title">Dexter Single Family Homes <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Dexter Single Family Homes</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Radius Address</B>  7860 Forest St, Dexter, MI 48130  <B>Radius</B>  0.50 Miles</div>
@@ -138,18 +185,27 @@
                     <div class="contact-block">
                         <div class="contact-name">Chris W & Kristin S</div>
                         <div class="search-block">
-                            <div class="search-title">7494 Wellington <span class="search-type">(Address Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">7494 Wellington</div>
+                                <div class="search-type">(Address Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Street Address</B>  7494 wellington</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">9160 Fawn <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">9160 Fawn</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R2220027221</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Single Family Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Single Family Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Ann Arbor, Belleville, Brighton, Dexter, Saline, Superior Township, Ypsilanti</div>
                     <div class="search-criteria"><B>Price</B>  300,000 to 410,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -162,11 +218,17 @@
                     <div class="contact-block">
                         <div class="contact-name">Dave & Danielle Cosgrove</div>
                         <div class="search-block">
-                            <div class="search-title">1403 Maywood <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">1403 Maywood</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R219078480</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bathrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Mailing City</B>  Ann Arbor</div>
@@ -181,7 +243,10 @@
                     <div class="search-criteria"><B>To Be Built</B>  No</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Brighton Homes <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Brighton Homes</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bathrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  350,000 to 600,000</div>
@@ -192,7 +257,10 @@
                     <div class="search-criteria"><B>Year Built</B>  2018 year(s)  or less</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">South Lyon Homes <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">South Lyon Homes</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bathrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  380,000 to 600,000</div>
@@ -207,7 +275,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Deb Anglin</div>
                         <div class="search-block">
-                            <div class="search-title">Inkster Single Family Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Inkster Single Family Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing City</B>  Inkster</div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 150,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -218,23 +289,38 @@
                     <div class="contact-block">
                         <div class="contact-name">Deb Voice</div>
                         <div class="search-block">
-                            <div class="search-title">10712 Pine Bluff <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">10712 Pine Bluff</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R216046029</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">281 Woodlake <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">281 Woodlake</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R216032711</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">3031 Moraine <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3031 Moraine</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R216050282</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">304 Lakeshore Pointe <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">304 Lakeshore Pointe</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R216042625</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Brighton Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Brighton Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  130,000 to 210,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -243,7 +329,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Howell Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Howell Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  130,000 to 210,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -252,15 +341,24 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">R216042242 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">R216042242</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R216042242</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Third St Brighton <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Third St Brighton</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R216036543</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Whitmore Lake Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Whitmore Lake Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  130,000 to 210,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -276,7 +374,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Debra Johnson</div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor Condos <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor Condos</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing City</B>  Ann Arbor</div>
                     <div class="search-criteria"><B>Price</B>  5,000 to 250,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
@@ -285,7 +386,10 @@
                     <div class="search-criteria"><B>SF Finishd Abv Grade</B>  600 or more</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing City</B>  Ann Arbor</div>
                     <div class="search-criteria"><B>Price</B>  5,000 to 250,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -293,7 +397,10 @@
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Canton Twp Condos <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Canton Twp Condos</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  5,000 to 225,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -302,7 +409,10 @@
                     <div class="search-criteria"><B>Municipality</B>  *Canton*</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Condos Dexter, Chelsea <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Condos Dexter, Chelsea</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Belleville, Brighton, Canton, Chelsea, Dexter, Hamburg, Howell, Milan, Plymouth, Saline, South Lyon, Van Buren, Whitmore Lake, Willis, Ypsilanti</div>
                     <div class="search-criteria"><B>Price</B>  5,000 to 225,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condominium, Single Family</div>
@@ -311,11 +421,17 @@
                     <div class="search-criteria"><B>SF Finishd Abv Grade</B>  600.000 or more</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">R2210018961 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">R2210018961</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R2210018961</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Vacant Land <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Vacant Land</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Ann Arbor, Barton Hills, Belleville, Brighton, Chelsea, Dexter, Dixboro, Frain Lake, Geddes, Hamburg, Howell, Milan, Pinckney, Pittsfield, Saline, Scio, South Lyon, Superior Township, Webster, Whitmore Lake, Ypsilanti</div>
                     <div class="search-criteria"><B>Price</B>  50,000 or less</div>
                     <div class="search-criteria"><B>Property Type</B>  Land</div>
@@ -325,18 +441,27 @@
                     <div class="contact-block">
                         <div class="contact-name">Diana Bomis</div>
                         <div class="search-block">
-                            <div class="search-title">Rental Homes <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Rental Homes</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R219032593,3264761,R219033302,R218116485,3264581</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Rental Homes 5.1 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Rental Homes 5.1</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R219038728,R219032936,R219033599</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Doris & David Gearring</div>
                         <div class="search-block">
-                            <div class="search-title">Stonebridge Condo <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Stonebridge Condo</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3246954</div>
                         </div>
                     </div>
@@ -347,7 +472,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Doug Hudson</div>
                         <div class="search-block">
-                            <div class="search-title">3270333 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3270333</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3270333</div>
                         </div>
                     </div>
@@ -358,7 +486,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Gloria Lam</div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  1.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  270,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -370,7 +501,10 @@
                     <div class="search-criteria indent">AND None</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  279,900 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -381,14 +515,20 @@
                     <div class="search-criteria indent">AND None</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Wickfield <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Wickfield</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3247172</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Hailey Mathis</div>
                         <div class="search-block">
-                            <div class="search-title">Colonial Square Condos <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Colonial Square Condos</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Legal Descriptions</B>  colonial square</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -402,7 +542,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Jane Stigel</div>
                         <div class="search-block">
-                            <div class="search-title">Ypsilanti Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ypsilanti Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  60,000 to 130,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -414,7 +557,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Jason & Alicia</div>
                         <div class="search-block">
-                            <div class="search-title">Boyd Single Family <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Boyd Single Family</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
                     <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
@@ -425,18 +571,27 @@
                     <div class="search-criteria"><span><B>Status</B> Active</span></div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">List from 5/17/20 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">List from 5/17/20</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R219114806, 3272527, R2200019425, 3272035,R219105152</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Jena Wisely</div>
                         <div class="search-block">
-                            <div class="search-title">3888 Diuble <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3888 Diuble</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3245735</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Vacant Land <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Vacant Land</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  225,000 or less</div>
                     <div class="search-criteria"><B>Property Type</B>  Land</div>
                     <div class="search-criteria"><B>Area</B>   Saline,Dexter Cmty</div>
@@ -446,7 +601,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Joe Evangelista</div>
                         <div class="search-block">
-                            <div class="search-title">Vacant Land <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Vacant Land</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  80,000 or less</div>
                     <div class="search-criteria"><B>Property Type</B>  Lots & Land</div>
                     <div class="search-criteria"><B>Area</B>   AA Briarwood & N to, AA Downtown/Burns Pa, AA E Geddes Huron Ri, AA NE & North Campus, AA NW US23 & M14, AA Realcomp, AA Scarlett & E Pitt, AA SW Liberty to Mai, AA Westside S of M14, Chelsea, Saline,Dexter Cmty</div>
@@ -456,7 +614,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Joel and Ashley Ziettlow</div>
                         <div class="search-block">
-                            <div class="search-title">Home Purchase <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Home Purchase</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Canton, Livonia, Plymouth</div>
                     <div class="search-criteria"><B>Price</B>  150,000 to 200,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -467,7 +628,10 @@
                     <div class="contact-block">
                         <div class="contact-name">John Evangelista</div>
                         <div class="search-block">
-                            <div class="search-title">Vacant Land-A2 Area <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Vacant Land-A2 Area</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  20.00 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  150,000 to 1,600,000</div>
                     <div class="search-criteria"><B>Property Type</B>  Land</div>
@@ -482,7 +646,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Johnny and Kahtie Lee</div>
                         <div class="search-block">
-                            <div class="search-title">Single Family Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Single Family Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Ann Arbor, Superior Township, Ypsilanti</div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 230,000</div>
@@ -494,11 +661,17 @@
                     <div class="contact-block">
                         <div class="contact-name">Jonathan & Brandy Rice</div>
                         <div class="search-block">
-                            <div class="search-title">6167 Aspen Way <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">6167 Aspen Way</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3231668</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">AA Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">AA Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  175,000 to 290,000</div>
@@ -509,7 +682,10 @@
                     <div class="search-criteria"><B>SF Finishd Abv Grade</B>  2000 or more</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Dexter Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Dexter Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  175,000 to 250,000</div>
@@ -520,7 +696,10 @@
                     <div class="search-criteria"><B>SF Finishd Abv Grade</B>  1900.000 or more</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Plymouth-Canton <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Plymouth-Canton</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  175,000 to 250,000</div>
@@ -532,7 +711,10 @@
                     <div class="search-criteria"><B>SF Finishd Abv Grade</B>  2000 or more</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Saline Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Saline Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  175,000 to 290,000</div>
@@ -543,7 +725,10 @@
                     <div class="search-criteria"><B>SF Finishd Abv Grade</B>  2000 or more</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ypsilanti-Twp Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ypsilanti-Twp Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Full Bathrooms</B>  2.00 or more   <B>1/2 Bathrooms</B>  1.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  200,000 to 290,000</div>
@@ -558,11 +743,17 @@
                     <div class="contact-block">
                         <div class="contact-name">Jonathon LeFaive</div>
                         <div class="search-block">
-                            <div class="search-title">433 Huronview <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">433 Huronview</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3235638</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">AA Homes <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">AA Homes</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Map Search</B>  Radius: 2 mi.  <B>Target Address</B>  209 E Washington, Ann Arbor, MI 48104</div>
                     <div class="search-criteria"><B>Price</B>  215,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -573,7 +764,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Josh & Caitlyn</div>
                         <div class="search-block">
-                            <div class="search-title">New Construction <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">New Construction</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Canton, Livonia, Northville, Plymouth</div>
                     <div class="search-criteria"><B>Price</B>  300,000 to 400,000</div>
@@ -589,7 +783,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Keith Wade</div>
                         <div class="search-block">
-                            <div class="search-title">Arbor Pointe <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Arbor Pointe</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B></B>  arbor point</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -597,11 +794,17 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Fenwick <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Fenwick</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3218700</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Haisley Area <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Haisley Area</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Map Search</B>  Radius: 0.73 mi.</div>
                     <div class="search-criteria"><B>Price</B>  200,000 to 425,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
@@ -612,11 +815,17 @@
                     <div class="contact-block">
                         <div class="contact-name">Kevin Zhang</div>
                         <div class="search-block">
-                            <div class="search-title">3872 Steamboat <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3872 Steamboat</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3239877</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">3905 Arcadia <span class="search-type">(Address Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3905 Arcadia</div>
+                                <div class="search-type">(Address Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Street Address</B>  3905 arcadia</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -626,7 +835,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Leandra Doemer</div>
                         <div class="search-block">
-                            <div class="search-title">Area 12, 21, 24, 32 <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Area 12, 21, 24, 32</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  1.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  50,000 or less</div>
@@ -636,7 +848,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ypsilanti, Milan <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ypsilanti, Milan</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  1.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  50,000 or less</div>
@@ -657,14 +872,20 @@
                     <div class="contact-block">
                         <div class="contact-name">Maria Wade</div>
                         <div class="search-block">
-                            <div class="search-title">13577 Rainbow <span class="search-type">(Address Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">13577 Rainbow</div>
+                                <div class="search-type">(Address Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Street Address</B>  13577 S Rainbow</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Area</B>  Chelsea</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Risdon Heights <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Risdon Heights</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing City</B>  Saline</div>
                     <div class="search-criteria"><B>Price</B>  200,000 to 600,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
@@ -675,15 +896,24 @@
                     <div class="contact-block">
                         <div class="contact-name">Mariana Cajaiba</div>
                         <div class="search-block">
-                            <div class="search-title">2104 Overlook Ct <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">2104 Overlook Ct</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3254376</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">921 Lennox <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">921 Lennox</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3254384</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Showings 2.10.18 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Showings 2.10.18</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Numbers</B>  R218007480, 3253949, R2180000235, 3253267, 3253260, 3254292, 3254224, R218000235</div>
                         </div>
                     </div>
@@ -694,11 +924,17 @@
                     <div class="contact-block">
                         <div class="contact-name">Marilyn O. & Kurt S.</div>
                         <div class="search-block">
-                            <div class="search-title">15 Southwick <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">15 Southwick</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3242995</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor Condos <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor Condos</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Numbers</B>  3239641, 3240496, 3240751, 3238360, 3241141, 3238429, 3241151</div>
                         </div>
                     </div>
@@ -713,7 +949,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Matt Payne</div>
                         <div class="search-block">
-                            <div class="search-title">Saline Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Saline Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  140,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -721,7 +960,10 @@
                     <div class="search-criteria"><B>Status</B>  Active (12/18/2015 or after)</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ypsi Twp Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ypsi Twp Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  130,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -729,7 +971,10 @@
                     <div class="search-criteria"><B>Status</B>  Active (3/17/2016 or after)</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ypsilanti Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ypsilanti Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  130,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -740,7 +985,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Matt Payne</div>
                         <div class="search-block">
-                            <div class="search-title">Stamford Comparables <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Stamford Comparables</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 180,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -766,31 +1014,52 @@
                     <div class="contact-block">
                         <div class="contact-name">Michael Melet</div>
                         <div class="search-block">
-                            <div class="search-title">3211444 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3211444</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3211444</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">3244748 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3244748</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3244748</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Chamberlain Condo <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Chamberlain Condo</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3235651</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Glazier Way Condos <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Glazier Way Condos</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3211847,3211877</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Laurel - Condo <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Laurel - Condo</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3214048</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Nature Cove <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Nature Cove</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3214295</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Nature Cove Condos <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Nature Cove Condos</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B></B>  nature cove</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -798,11 +1067,17 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Newport Rd <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Newport Rd</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3211939</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ranch Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ranch Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  200,000 to 400,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -811,7 +1086,10 @@
                     <div class="search-criteria"><B>SF Finishd Abv Grade</B>  1400.000 or more</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Redeemer Ranch <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Redeemer Ranch</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3212607</div>
                         </div>
                     </div>
@@ -822,11 +1100,17 @@
                     <div class="contact-block">
                         <div class="contact-name">Michelle Mac & James Lin</div>
                         <div class="search-block">
-                            <div class="search-title">2534 W Liberty <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">2534 W Liberty</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3288842</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">3289118 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3289118</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3289118</div>
                         </div>
                     </div>
@@ -889,15 +1173,24 @@
                     <div class="contact-block">
                         <div class="contact-name">Rebecca and Kristin Snyder</div>
                         <div class="search-block">
-                            <div class="search-title">12479 Sanford <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">12479 Sanford</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R214118362</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">8869 Augusta <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">8869 Augusta</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3225783</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  165,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -905,15 +1198,24 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Auction Homes <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Auction Homes</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R215019037, R214127157,R215015090,3228666,R214124963</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Huron River & Shawn <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Huron River & Shawn</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3229354,3229254,3226861,3227532,3226573,3227740,G31231540, 3227307,3229103</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Lincoln Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Lincoln Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  160,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -921,7 +1223,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Milan, Manchester <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Milan, Manchester</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  160,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -929,7 +1234,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Saline Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Saline Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  160,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -937,11 +1245,17 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Torrey & Collyer <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Torrey & Collyer</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R215026661,3226316</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Whitmore Lake <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Whitmore Lake</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  160,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -972,11 +1286,17 @@
                     <div class="contact-block">
                         <div class="contact-name">Roeland & Kim Tuinman</div>
                         <div class="search-block">
-                            <div class="search-title">1710 S. State <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">1710 S. State</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3247791</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  400,000 to 700,000</div>
@@ -988,7 +1308,10 @@
                     <div class="search-criteria"><B>SF Finishd Abv Grade</B>  2700 or more</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">S Division <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">S Division</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3247359</div>
                         </div>
                     </div>
@@ -1003,7 +1326,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Roshana Green</div>
                         <div class="search-block">
-                            <div class="search-title">Rentals <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Rentals</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Ann Arbor, Ypsilanti</div>
                     <div class="search-criteria"><B>Price</B>  1,000 to 1,600</div>
@@ -1027,7 +1353,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Samantha Christian</div>
                         <div class="search-block">
-                            <div class="search-title">Rentals <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Rentals</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  1,500 or less</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
@@ -1047,7 +1376,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Sarah Longcore</div>
                         <div class="search-block">
-                            <div class="search-title">Wellesley Gardens <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Wellesley Gardens</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                     <div class="search-criteria"><B>Radius Address</B>  5782 hampshire, ypsilanti, mi 48197  <B>Radius</B>  0.25 Miles</div>
@@ -1089,23 +1421,38 @@
                     <div class="contact-block">
                         <div class="contact-name">Sophia Williams & Todd Pedrys</div>
                         <div class="search-block">
-                            <div class="search-title">2176 Maute <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">2176 Maute</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3247233</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">67 W Cedar Lake <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">67 W Cedar Lake</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3247718</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Chelsea Home <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Chelsea Home</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3249729</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Grass Lake Homes <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Grass Lake Homes</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Numbers</B>  3247279, G201701035, G201701058</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Single Family Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Single Family Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Brooklyn, Chelsea, Dexter, Grass Lake, Gregory, Manchester, Saline, Whitmore Lake</div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 180,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -1118,11 +1465,17 @@
                     <div class="contact-block">
                         <div class="contact-name">Spike and Sarah Gronim</div>
                         <div class="search-block">
-                            <div class="search-title">1790 Country Club <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">1790 Country Club</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3286199</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Home Search - 2  Acres <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Home Search - 2  Acres</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Ann Arbor, Dexter, Saline, Superior Township, Ypsilanti</div>
@@ -1137,7 +1490,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Stan Roose</div>
                         <div class="search-block">
-                            <div class="search-title">Plymouth-Canton Condos <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Plymouth-Canton Condos</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Canton, Plymouth</div>
                     <div class="search-criteria"><B>Price</B>  250,000 to 375,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condominium</div>
@@ -1157,7 +1513,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Susan Aldworth</div>
                         <div class="search-block">
-                            <div class="search-title">1816 Wentworth <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">1816 Wentworth</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3240027</div>
                         </div>
                     </div>
@@ -1168,11 +1527,17 @@
                     <div class="contact-block">
                         <div class="contact-name">Theresa Bomis</div>
                         <div class="search-block">
-                            <div class="search-title">9118 Wildwood <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">9118 Wildwood</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3271842</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Whitmore Lake Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Whitmore Lake Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  305,000 or less</div>
@@ -1185,7 +1550,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Tierra Haynes</div>
                         <div class="search-block">
-                            <div class="search-title">Centennial Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Centennial Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B></B>  Centennial</div>
                     <div class="search-criteria"><B>Price</B>  300,000 to 550,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -1201,7 +1569,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Venetia Sims</div>
                         <div class="search-block">
-                            <div class="search-title">Fountain Market Comparables <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Fountain Market Comparables</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3279057, 3284951, 3283695, 3284977, 3281770</div>
                         </div>
                     </div>
@@ -1212,7 +1583,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Vernice Gillespie</div>
                         <div class="search-block">
-                            <div class="search-title">Single Family $140 or less <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Single Family $140 or less</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Counties</B>  Livingston, Washtenaw</div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Brighton, Howell, South Lyon, Ypsilanti</div>
                     <div class="search-criteria"><B>Price</B>  140,000 or less</div>
@@ -1229,6 +1603,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Ally Ganim</div>
                         <div class="empty">No searches found</div>
@@ -1236,19 +1614,31 @@
                     <div class="contact-block">
                         <div class="contact-name">Andrew DuKatz</div>
                         <div class="search-block">
-                            <div class="search-title">3008728 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3008728</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3008728</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">3211537 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3211537</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3211537,3211656</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">3211650 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3211650</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3211650</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor Houses <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor Houses</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 350,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1256,7 +1646,10 @@
                     <div class="search-criteria"><B>Statuses</B>  Active, Active-CTS, Pending</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Morton Ave <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Morton Ave</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3211320</div>
                         </div>
                     </div>
@@ -1275,7 +1668,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Barbara Davis</div>
                         <div class="search-block">
-                            <div class="search-title">Condo Rentals <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Condo Rentals</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  1,100 to 1,600</div>
@@ -1291,18 +1687,27 @@
                     <div class="contact-block">
                         <div class="contact-name">Ben Summers</div>
                         <div class="search-block">
-                            <div class="search-title">4417 Inverness <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">4417 Inverness</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3228649</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Briana Wade</div>
                         <div class="search-block">
-                            <div class="search-title">3218750 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3218750</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3218750</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Condo Rentals <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Condo Rentals</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  1,300 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
@@ -1314,15 +1719,24 @@
                     <div class="contact-block">
                         <div class="contact-name">Chris Wilczynski</div>
                         <div class="search-block">
-                            <div class="search-title">1458 S. Hidden <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">1458 S. Hidden</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3230169</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">6727 Robison <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">6727 Robison</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3228534</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">AA Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">AA Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>City</B>  Ann Arbor</div>
@@ -1334,7 +1748,10 @@
                     <div class="search-criteria"><B>Garage</B>  excluded None</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Rental Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Rental Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  2,200 or less</div>
@@ -1344,11 +1761,17 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Robison <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Robison</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3228710</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Saline Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Saline Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  180,000 to 275,000</div>
@@ -1362,7 +1785,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Christopher Wilczynski</div>
                         <div class="search-block">
-                            <div class="search-title">Canton Rentals <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Canton Rentals</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  1,400 or less</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
@@ -1372,7 +1798,10 @@
                     <div class="search-criteria"><B>SF Finishd Abv Grade</B>  900.000 or more</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Condo Rentals <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Condo Rentals</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  900 to 1,400</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
@@ -1385,18 +1814,27 @@
                     <div class="contact-block">
                         <div class="contact-name">Dalia Naawani-Goldman</div>
                         <div class="search-block">
-                            <div class="search-title">Park Pl & Baldwin <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Park Pl & Baldwin</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3211537,3211650</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Debra Johnson</div>
                         <div class="search-block">
-                            <div class="search-title">3220526 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3220526</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3220526</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>City</B>  Ann Arbor</div>
                     <div class="search-criteria"><B>Acreage</B>  .50 ac or less</div>
@@ -1406,7 +1844,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Fox Glen Condos <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Fox Glen Condos</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B></B>  fox glen</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1414,7 +1855,10 @@
                     <div class="search-criteria"><B>Statuses</B>  Active, Sold (8/21/2012 or after)</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Lots - AA & Saline <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Lots - AA & Saline</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  8 ac or less</div>
                     <div class="search-criteria"><B>Price</B>  400,000 or less</div>
                     <div class="search-criteria"><B>Property Type</B>  Lots & Land</div>
@@ -1422,11 +1866,17 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Lots-Ravenwood <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Lots-Ravenwood</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Numbers</B>  3219950, 3211685, 3219950, 3211685</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Normal Pk & College <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Normal Pk & College</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B></B>  college height, normal park</div>
                     <div class="search-criteria"><B>Price</B>  200,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -1435,14 +1885,20 @@
                     <div class="search-criteria"><B>Statuses</B>  Active, Active-CTS</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ravenwood-Chalmers <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ravenwood-Chalmers</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  60,000 or less</div>
                     <div class="search-criteria"><B>Property Type</B>  Lots & Land</div>
                     <div class="search-criteria"><B>Area</B>  AA Westside S of M14, AA E Geddes Huron Ri</div>
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Saline Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Saline Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Acreage</B>  .50 ac or less</div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 175,000</div>
@@ -1452,11 +1908,17 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Sharon Lot <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Sharon Lot</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3219493</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Sharon Lot <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Sharon Lot</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  30,000 to 40,000</div>
                     <div class="search-criteria"><B>Property Type</B>  Lots & Land</div>
                     <div class="search-criteria"><B>Area</B>  AA Scarlett & E Pitt</div>
@@ -1466,7 +1928,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Devin Taylor</div>
                         <div class="search-block">
-                            <div class="search-title">AA Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">AA Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 200,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1479,26 +1944,41 @@
                     <div class="contact-block">
                         <div class="contact-name">Dr. Jorge Gomez</div>
                         <div class="search-block">
-                            <div class="search-title">AA Homes <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">AA Homes</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3219579,3218651,3220082</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Prairie Ct <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Prairie Ct</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3220230</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Ed & Colleen Glover</div>
                         <div class="search-block">
-                            <div class="search-title">3319 Wall St. <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3319 Wall St.</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R214037366</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">9251 N. Beck <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">9251 N. Beck</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R214040300</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Plymouth Canton <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Plymouth Canton</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Full Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  4.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  200,000 to 350,000</div>
@@ -1508,7 +1988,10 @@
                     <div class="search-criteria"><B>SF Finishd Abv Grade</B>  2000.000 or more</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">R214028360 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">R214028360</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R214028360</div>
                         </div>
                     </div>
@@ -1519,7 +2002,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Ginger Talbot</div>
                         <div class="search-block">
-                            <div class="search-title">Colonial Square <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Colonial Square</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B></B>  colonial square</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1530,7 +2016,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Hanif Muhammad</div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  375,000 to 500,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1538,7 +2027,10 @@
                     <div class="search-criteria"><B>Status</B>  Active (10/15/2014 or after)</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Dexter Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Dexter Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  375,000 to 500,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1546,7 +2038,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Meadow Ridge-Sold <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Meadow Ridge-Sold</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3230523</div>
                         </div>
                     </div>
@@ -1557,7 +2052,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Henry and Esther Caudle</div>
                         <div class="search-block">
-                            <div class="search-title">Bicentennial <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Bicentennial</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Numbers</B>  3225260, 3221529, 3224858, 3223902, 3223558, 3225066</div>
                         </div>
                     </div>
@@ -1568,42 +2066,69 @@
                     <div class="contact-block">
                         <div class="contact-name">Jennifer Wilczynski</div>
                         <div class="search-block">
-                            <div class="search-title">1280 Bicentennial <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">1280 Bicentennial</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3218875</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">218 Tower <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">218 Tower</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3218086,3216646</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">3228652 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3228652</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3228652</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">348 Highland <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">348 Highland</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3224102</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">352 Nichols <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">352 Nichols</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3221054</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">374 Hollywood <span class="search-type">(Address Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">374 Hollywood</div>
+                                <div class="search-type">(Address Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Street Address</B>  374 hollywood</div>
                     <div class="search-criteria"><B>City</B>  Saline</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">410 Harris <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">410 Harris</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3202999</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">S Ann Arbor <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">S Ann Arbor</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3219217</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Saline Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Saline Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Full Bathrooms</B>  1.00 or more   <B>1/2 Bathrooms</B>  1.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  140,000 to 220,000</div>
@@ -1616,19 +2141,31 @@
                     <div class="contact-block">
                         <div class="contact-name">Jim and Debbie Warila</div>
                         <div class="search-block">
-                            <div class="search-title">8645 Warner <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">8645 Warner</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3213296</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Austin <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Austin</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3200405</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Milan Oakville <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Milan Oakville</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3213235</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Saline Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Saline Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  .70 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  275,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -1644,7 +2181,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Joe & Jolene</div>
                         <div class="search-block">
-                            <div class="search-title">Gabrielle & Whitmore <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Gabrielle & Whitmore</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3229536,3229212</div>
                         </div>
                     </div>
@@ -1655,7 +2195,10 @@
                     <div class="contact-block">
                         <div class="contact-name">John & Justine Bunka</div>
                         <div class="search-block">
-                            <div class="search-title">AA Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">AA Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  150,000 to 230,000</div>
@@ -1665,7 +2208,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Dexter-Chelsea Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Dexter-Chelsea Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  150,000 to 230,000</div>
@@ -1675,7 +2221,10 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Saline Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Saline Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  150,000 to 230,000</div>
@@ -1696,11 +2245,17 @@
                     <div class="contact-block">
                         <div class="contact-name">Keiko Yokota-Carter</div>
                         <div class="search-block">
-                            <div class="search-title">3211332 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3211332</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3211332</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Ann Arbor Condos <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Ann Arbor Condos</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 235,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1712,11 +2267,17 @@
                     <div class="contact-block">
                         <div class="contact-name">Kemako Emory</div>
                         <div class="search-block">
-                            <div class="search-title">3220873 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3220873</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3220873</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Lincoln Schools <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Lincoln Schools</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  80,000 to 160,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -1732,7 +2293,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Ken and Marcia White</div>
                         <div class="search-block">
-                            <div class="search-title">16171 Bell Creek <span class="search-type">(Address Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">16171 Bell Creek</div>
+                                <div class="search-type">(Address Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Street Address</B>  16171 bell creek</div>
                     <div class="search-criteria"><B>Mailing City</B>  Livonia</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -1740,19 +2304,31 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">19991 Farmington Rd <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">19991 Farmington Rd</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R216110580</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">29510 Lyndon <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">29510 Lyndon</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R217034825</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Livonia Area <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Livonia Area</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Numbers</B>  R217026755, R217025354, R216090178, R217027456, R216112036, R217025067, R216104460, R217013600</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Livonia Area <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Livonia Area</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  200,000 to 300,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1766,11 +2342,17 @@
                     <div class="search-criteria indent">AND Tri-Level</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">New Listings <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">New Listings</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Numbers</B>  R217029743, R217029608, R217029305, R217021339</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">New Listings 4.23 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">New Listings 4.23</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R217029486,R217031549,R217031374,R217031437,R217027695</div>
                         </div>
                     </div>
@@ -1781,11 +2363,17 @@
                     <div class="contact-block">
                         <div class="contact-name">Kim Coyne</div>
                         <div class="search-block">
-                            <div class="search-title">Sutton <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Sutton</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3212360</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Wells-Milan <span class="search-type">(Address Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Wells-Milan</div>
+                                <div class="search-type">(Address Search)</div>
+                            </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
                     <div class="search-criteria"><span><B>Bathrooms</B> 2.00 or more</span></div>
@@ -1811,7 +2399,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Lisa Kohl and Melissa Kohl</div>
                         <div class="search-block">
-                            <div class="search-title">AA Condos <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">AA Condos</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  130,000 to 210,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
@@ -1823,7 +2414,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Melissa & Ron Snyder</div>
                         <div class="search-block">
-                            <div class="search-title">Eberwhite <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Eberwhite</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  200,000 to 425,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -1834,7 +2428,10 @@
                     <div class="search-criteria"><B>Jr High School</B>  Slauson</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">R213051311 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">R213051311</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R213051311</div>
                         </div>
                     </div>
@@ -1853,7 +2450,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Patrick & Abby Dillon</div>
                         <div class="search-block">
-                            <div class="search-title">AA Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">AA Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  150,000 to 290,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -1862,26 +2462,41 @@
                     <div class="search-criteria"><B>Statuses</B>  Active, Active-Contingent</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Sold Comps-Keech <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Sold Comps-Keech</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3217248,3219175,3219652,3216406,3216905,3219740</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Phoebe Gloeckner</div>
                         <div class="search-block">
-                            <div class="search-title">3211939 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3211939</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3211939</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">821 Bruce <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">821 Bruce</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3212161</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">AA Homes <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">AA Homes</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3211975,3211550,3211695,3211574,3210649</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">AA Homes <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">AA Homes</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Map Search</B>  Radius: 1 mi.  <B>Target&nbspAddress</B>  710 brooks, ann arbor, mi</div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 300,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -1889,22 +2504,34 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Fifth - Wilton <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Fifth - Wilton</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3211663,3211987</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Sold Comps-Wilton <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Sold Comps-Wilton</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3207775,3210701,3210700,3209178,3210819,3207582</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Third - Wendy <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Third - Wendy</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3212067,3212074</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Renee Cole</div>
                         <div class="search-block">
-                            <div class="search-title">Chelsea Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Chelsea Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  250,000 to 400,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1913,7 +2540,10 @@
                     <div class="search-criteria"><B>Year Built</B>  2011 year(s)  or less</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Dexter Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Dexter Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  250,000 to 400,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1922,7 +2552,10 @@
                     <div class="search-criteria"><B>Year Built</B>  2011 year(s)  or less</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Saline Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Saline Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  250,000 to 400,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -1934,25 +2567,37 @@
                     <div class="contact-block">
                         <div class="contact-name">Ron Grifka</div>
                         <div class="search-block">
-                            <div class="search-title">3212452 <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">3212452</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3212452</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Waterview <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Waterview</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3213272</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Ron Smolarski</div>
                         <div class="search-block">
-                            <div class="search-title">Chelsea Vacant Land <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Chelsea Vacant Land</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3217744,3211976,3207460,3217876,3217072,3210144,3217112</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Ryan Klobucar</div>
                         <div class="search-block">
-                            <div class="search-title">Vacant Land <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Vacant Land</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  8 ac or more</div>
                     <div class="search-criteria"><B>Price</B>  130,000 or less</div>
                     <div class="search-criteria"><B>Property Type</B>  Lots & Land</div>
@@ -1960,40 +2605,61 @@
                     <div class="search-criteria"><B>Status</B>  Active</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Wells-Milan <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Wells-Milan</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3211730</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Sam and Marline Stephens</div>
                         <div class="search-block">
-                            <div class="search-title">Canton <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Canton</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R213069689</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Greene Farm <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Greene Farm</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3212880</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">New Listings <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">New Listings</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3212794, 3212289,3212585</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Sandy Trembath</div>
                         <div class="search-block">
-                            <div class="search-title">1668 Coburn <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">1668 Coburn</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3227998</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Briarcrest - Sold <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Briarcrest - Sold</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3247350</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">SangHyun Lee</div>
                         <div class="search-block">
-                            <div class="search-title">Homes & Condos <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Homes & Condos</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  100,000 to 250,000</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condo, Single Family</div>
@@ -2006,7 +2672,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Sarah Beaulieu</div>
                         <div class="search-block">
-                            <div class="search-title">Single Family Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Single Family Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  250,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -2018,7 +2687,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Sarah Longcore</div>
                         <div class="search-block">
-                            <div class="search-title">AA Condos <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">AA Condos</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  70,000 to 130,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Condo</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -2026,21 +2698,30 @@
                     <div class="search-criteria"><B>Statuses</B>  Active, Active-CTS</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Dexter Condos <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Dexter Condos</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  R213042300, R213058931</div>
                         </div>
                     </div>
                     <div class="contact-block">
                         <div class="contact-name">Susan Aldworth</div>
                         <div class="search-block">
-                            <div class="search-title">Rental Homes <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Rental Homes</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  2,500 to 4,000</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Rental</div>
                     <div class="search-criteria"><B>Area</B>  AA Briarwood & N to, AA Scarlett & E Pitt, AA E Geddes Huron Ri, AA NE & North Campus, AA Downtown/Burns Pa, Northville Cmty, Plymouth Cmty, AA NW US23 & M14, AA Westside S of M14, AA SW Liberty to Mai</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Saline Listings <span class="search-type">(Listing Number Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Saline Listings</div>
+                                <div class="search-type">(Listing Number Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Listing Number</B>  3220082,3220230,3220430,3220011,3220134,3220347</div>
                         </div>
                     </div>
@@ -2055,7 +2736,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Wilma Gold-Jones</div>
                         <div class="search-block">
-                            <div class="search-title">Condo Search <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Condo Search</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  170,000 or less</div>
@@ -2067,7 +2751,10 @@
                     <div class="search-criteria"><B># of Garage Spaces</B>  1.000 or more</div>
                         </div>
                         <div class="search-block">
-                            <div class="search-title">Pittsfield Condos <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Pittsfield Condos</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Price</B>  200,000 or less</div>

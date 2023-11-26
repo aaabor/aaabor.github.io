@@ -15,8 +15,15 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">1984 Brookfield <span class="search-type">(Address Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">1984 Brookfield</div>
+                        <div class="search-type">(Address Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Street Address</B>  1984 Brookfield</div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  1.00 to 2.00   <B>Full Bathrooms</B>  1.00 to 2.00</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 to 3.00</div>
@@ -32,7 +39,10 @@
                     <div class="search-criteria indent">OR 1 Story Rnch 1st Flr</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">2/3 1/3 <span class="search-type">(Custom Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">2/3 1/3</div>
+                        <div class="search-type">(Custom Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  1.00 to 3.00</div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 to 4.00</div>
                     <div class="search-criteria"><B>Counties</B>  Jackson, Lenawee, Monroe, Washtenaw, Wayne</div>
@@ -46,10 +56,17 @@
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">2171 Harold St</div>
                         <div class="search-block">
-                            <div class="search-title">Find Comparables - R <span class="search-type">(Radius Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Find Comparables - R</div>
+                                <div class="search-type">(Radius Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  1.00 to 1.00</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 to 3.00</div>
                     <div class="search-criteria"><B>Include Property Subtype</B>  Single Family</div>
@@ -61,7 +78,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Jenny Sutherland</div>
                         <div class="search-block">
-                            <div class="search-title">2-1 3-2 <span class="search-type">(Custom Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">2-1 3-2</div>
+                                <div class="search-type">(Custom Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Total Bathrooms</B>  1.00 to 2.00</div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 to 3.00</div>
                     <div class="search-criteria"><B>Counties</B>  Jackson, Lenawee, Monroe, Washtenaw, Wayne</div>
@@ -83,6 +103,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
             </div>
         </div>
         <script src="../searches.js"></script>

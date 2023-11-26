@@ -15,15 +15,25 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">AA Rentals <span class="search-type">(Quick Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">AA Rentals</div>
+                        <div class="search-type">(Quick Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Mailing City</B>  Ann Arbor</div>
                     <div class="search-criteria"><B>Price</B>  3,000 or less</div>
                     <div class="search-criteria"><B>Property Type</B>  Rental</div>
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active, Active-Contingent, Active-LTC</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Hagan Rentals <span class="search-type">(Quick Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Hagan Rentals</div>
+                        <div class="search-type">(Quick Search)</div>
+                    </div>
                     <div class="search-criteria"><B>Bathrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  3.00 or more</div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Ann Arbor, Dexter</div>
@@ -32,7 +42,10 @@
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active, Active-Contingent, Active-LTC</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">R&A <span class="search-type">(Map Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">R&A</div>
+                        <div class="search-type">(Map Search)</div>
+                    </div>
                     <div class="search-criteria indent">FSO</div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Bedrooms</B> 3.00 or more</span></div>
@@ -46,6 +59,10 @@
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Ethan Young</div>
                         <div class="empty">No searches found</div>
@@ -65,7 +82,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Ron Whitaker</div>
                         <div class="search-block">
-                            <div class="search-title">Jackson County Excluding Jackson City Limits <span class="search-type">(Map Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">Jackson County Excluding Jackson City Limits</div>
+                                <div class="search-type">(Map Search)</div>
+                            </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Status</B> Active</span></div>
                         </div>
@@ -73,7 +93,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Scott Sterberg</div>
                         <div class="search-block">
-                            <div class="search-title">773582 <span class="search-type">(Quick Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">773582</div>
+                                <div class="search-type">(Quick Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Acreage</B>  2.00 ac or more</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Business, Commercial, Industrial</div>
                     <div class="search-criteria"><B>Property Type</B>  Commercial</div>
@@ -83,6 +106,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
             </div>
         </div>
         <script src="../searches.js"></script>

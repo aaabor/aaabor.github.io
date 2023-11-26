@@ -15,8 +15,15 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">New Listings Washtenaw County <span class="search-type">(Hot Sheet)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">New Listings Washtenaw County</div>
+                        <div class="search-type">(Hot Sheet)</div>
+                    </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>From</B> 11/15/2023 12:00:03 PM<B>Changes Included</B>  Price Increases, Price Reductions, New Listings, Back on Market</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condominium, Single Family</div>
@@ -24,7 +31,10 @@
                     <div class="search-criteria"><B>Statuses</B>  Coming Soon, Active, Active-Contingent</div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">new <span class="search-type">(Hot Sheet)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">new</div>
+                        <div class="search-type">(Hot Sheet)</div>
+                    </div>
                     <div class="search-criteria"><B>County</B>  Washtenaw</div>
                     <div class="search-criteria"><B>From</B> 3/20/2023 11:59:23 AM<B>Changes Included</B>  Price Increases, Price Reductions, New Listings, Back on Market</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condominium, Single Family</div>
@@ -33,6 +43,10 @@
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Anna Warford</div>
                         <div class="empty">No searches found</div>
@@ -44,7 +58,10 @@
                     <div class="contact-block">
                         <div class="contact-name">Anthony Byrk</div>
                         <div class="search-block">
-                            <div class="search-title">House <span class="search-type">(Custom Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">House</div>
+                                <div class="search-type">(Custom Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Full Bathrooms</B>  1.00 or more</div>
                     <div class="search-criteria"><B>Bedrooms</B>  2.00 or more</div>
                     <div class="search-criteria"><B>Mailing Cities</B>  Ann Arbor, Ypsilanti</div>
@@ -59,7 +76,10 @@
                     <div class="contact-block">
                         <div class="contact-name">joy</div>
                         <div class="search-block">
-                            <div class="search-title">ann arbor listings 315 <span class="search-type">(Standard Search)</span></div>
+                            <div class="title-block">
+                                <div class="search-title">ann arbor listings 315</div>
+                                <div class="search-type">(Standard Search)</div>
+                            </div>
                     <div class="search-criteria"><B>Price</B>  315,000 or less</div>
                     <div class="search-criteria"><B>Include Property Subtypes</B>  Condominium, Single Family</div>
                     <div class="search-criteria"><B>Property Type</B>  Residential</div>
@@ -69,6 +89,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
             </div>
         </div>
         <script src="../searches.js"></script>

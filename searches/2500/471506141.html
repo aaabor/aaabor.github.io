@@ -15,8 +15,15 @@
                 <div class="tab" data-tab="inactive-contact-searches">Inactive Contact Searches</div>
             </div>
             <div id="saved-searches" class="search-group active">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterSearch" placeholder="Filter by search name"/>
+                </div>
                 <div class="search-block">
-                    <div class="search-title">225,000 30-40 min from harper .8 acres <span class="search-type">(Map Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">225,000 30-40 min from harper .8 acres</div>
+                        <div class="search-type">(Map Search)</div>
+                    </div>
                     <div class="search-criteria"><span><B>Property Types</B> RESI, INCP</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
                     <div class="search-criteria"><span><B>Acreage</B> 0.80 ac or more</span></div>
@@ -30,7 +37,10 @@
                     <div class="search-criteria"><span><B>Statuses</B> Coming Soon, Active</span></div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">255,000 30-40 min from harper .8 acres <span class="search-type">(Map Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">255,000 30-40 min from harper .8 acres</div>
+                        <div class="search-type">(Map Search)</div>
+                    </div>
                     <div class="search-criteria"><span><B>Property Types</B> RESI, INCP</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 1 Shape</span></div>
                     <div class="search-criteria"><span><B>Acreage</B> 0.90 ac or more</span></div>
@@ -44,13 +54,20 @@
                     <div class="search-criteria"><span><B>Statuses</B> Coming Soon, Active</span></div>
                 </div>
                 <div class="search-block">
-                    <div class="search-title">Ypsilanti Subdivisions <span class="search-type">(Map Search)</span></div>
+                    <div class="title-block">
+                        <div class="search-title">Ypsilanti Subdivisions</div>
+                        <div class="search-type">(Map Search)</div>
+                    </div>
                     <div class="search-criteria"><span><B>Property Type</B> RESI</span></div>
                     <div class="search-criteria"><span><B>Map Draw</B> 11 Shapes</span></div>
                     <div class="search-criteria"><span><B>Status</B> Sold (8/29/2021 or after)</span></div>
                 </div>
             </div>
             <div id="active-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterActive" placeholder="Filter by contact name"/>
+                </div>
                     <div class="contact-block">
                         <div class="contact-name">Jessica Rupp</div>
                         <div class="empty">No searches found</div>
@@ -65,6 +82,10 @@
                     </div>
             </div>
             <div id="inactive-contact-searches" class="search-group">
+                <div class="filter">
+                    <label>Filter Searches: </label>
+                    <input class="filter-text" type="text" name="filterInactive" placeholder="Filter by contact name"/>
+                </div>
             </div>
         </div>
         <script src="../searches.js"></script>

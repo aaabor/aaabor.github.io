@@ -34,6 +34,26 @@ html {
   text-decoration: underline;
 }
 
+.filter {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.filter-text {
+  margin-left: 10px;
+}
+
+.filtered {
+  display: none;
+}
+
+strong {
+  font-weight: 700;
+  background-color: #0077d9;
+  color: #ffffff;
+}
+
 .search-group {
   display: none;
 }
@@ -46,16 +66,19 @@ html {
   margin-bottom: 60px;
 }
 
-.search-title .search-type {
-  font-size: 1.5rem;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.search-title, .contact-name {
+.title-block, .contact-name {
+  display: flex;
+  align-items: center;
   font-size: 2rem;
   font-weight: 700;
   font-style: normal;
+}
+
+.title-block .search-type {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+  margin-left:20px;
 }
 
 .search-criteria {
@@ -88,7 +111,7 @@ html {
   font-size: 1.5rem;
 }
 
-.contact-block .search-block .search-title .search-type {
+.contact-block .search-block .search-type {
   font-size: 1rem;
 }
 
