@@ -81,6 +81,10 @@ html, body, h1, h2, h3, p {
   opacity: 1;
 }
 
+.hidden {
+  pointer-events: none;
+}
+
 .active.slider-button {
   background-color: rgba(0, 119, 217, 0.5);
   border: 2px solid rgba(0, 119, 217, 0.1);

@@ -25,8 +25,14 @@ function setupSliderNavigation() {
 }
 
 function addActiveClass(index) {
-  panels[index].setAttribute("class", panels[index].getAttribute("class") + " active");
+  let classNames = panels[index].getAttribute("class").split(" ").filter(n => n !== "hidden");
+  classNames.push("active");
+  panels[index].setAttribute("class", classNames.join(" "));
   navButtons[index].setAttribute("class", navButtons[index].getAttribute("class") + " active");
+}
+
+function addHiddenClass(index) {
+  panels[index].setAttribute("class", panels[index].getAttribute("class") + " hidden");
 }
 
 function removeActiveClass(index) {
@@ -39,7 +45,8 @@ function removeActiveClass(index) {
 
 function nextPanel() {
   removeActiveClass(currentPanel);
-  
+  setTimeout(addHiddenClass, 750, currentPanel);
+
   currentPanel += 1;
   if (currentPanel >= panels.length)
     currentPanel = 0;
@@ -104,6 +111,7 @@ navButtons = document.getElementsByClassName("slider-button");
 
 for (let i = 0; i < panels.length; i++) {
   removeActiveClass(i);
+  addHiddenClass(i);
 }
 
 addActiveClass(0);
