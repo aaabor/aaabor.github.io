@@ -99,6 +99,25 @@ strong {
   border-bottom: 1px solid #d3d3d3;
 }
 
+.contact-block .contact-dates {
+  display: flex;
+}
+
+.contact-block .contact-dates p {
+    margin-right: 20px;
+}
+
+.contact-block .contact-notes {
+    margin-bottom: 20px;
+}
+
+.contact-block .contact-dates p strong,
+.contact-block .contact-notes strong {
+    font-weight: 700;
+    color: #000000;
+    background-color: transparent;
+}
+
 .contact-block .contact-name {
   margin-bottom: 20px;
 }
