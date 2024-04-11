@@ -53,6 +53,7 @@ html, body, h1, h2, h3, p {
 
 .slider-container {
   height: 158px;
+  width: 775px;
   display: flex;
   flex-direction: column;
   justify-content: center;
