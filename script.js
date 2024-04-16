@@ -58,6 +58,7 @@ function nextPanel() {
 
 function prevPanel() {
   removeActiveClass(currentPanel);
+  setTimeout(addHiddenClass, 750, currentPanel);
 
   currentPanel -= 1;
   if (currentPanel < 0)
@@ -95,6 +96,7 @@ function onClick(e) {
   let index = parseInt(e.target.getAttribute("data-index"));
   if (index !== currentPanel) {
     removeActiveClass(currentPanel);
+    setTimeout(addHiddenClass, 750, currentPanel);
     currentPanel = index;
     addActiveClass(currentPanel);
   }
