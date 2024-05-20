@@ -94,3 +94,17 @@ html, body, h1, h2, h3, p {
   background-color: rgba(0, 119, 217, 0.5);
   border: 2px solid rgba(0, 119, 217, 0.1);
 }
+
+.link-button {
+  background: rgb(0, 119, 217);
+  padding: 10px 15px 15px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link-button:hover {
+  background: rgb(0, 91, 159);
+  font-style: italic;
+}
