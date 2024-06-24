@@ -22,7 +22,6 @@ h1 {
 
 h2 {
   margin-top: 30px;
-  text-decoration: underline;
 }
 
 ul {
@@ -37,6 +36,10 @@ li {
 a {
   color: #0077d9;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 a:visited {
